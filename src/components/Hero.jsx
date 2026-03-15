@@ -57,15 +57,6 @@ export default function Hero() {
           <span className="shimmer-text">Meet Royalty</span>
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="font-sans text-slate-200 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed"
-        >
-          Experience unparalleled Himalayan luxury at the shores of Naini Lake.
-          48 curated rooms, breathtaking panoramas, and bespoke hospitality.
-        </motion.p>
 
         {/* Stats */}
         <motion.div
