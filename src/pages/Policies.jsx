@@ -15,7 +15,7 @@ export default function Policies() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=60" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_lobby_staircase.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Hotel Rules</motion.p>
@@ -58,8 +58,8 @@ export default function Policies() {
           <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} className="mt-10 text-center">
             <p className="font-sans text-slate-500 text-xs">Last updated: January 2025. Policies subject to change — please verify before your visit.</p>
             <p className="font-sans text-slate-500 text-xs mt-1">
-              Queries: <a href="mailto:pushkar.sarraf44@gmail.com" className="text-primary hover:underline">pushkar.sarraf44@gmail.com</a> ·{' '}
-              <a href="tel:8252561063" className="text-primary hover:underline">+91 8252561063</a>
+              Queries: <a href="mailto:info@nainitallakeview.com" className="text-primary hover:underline">info@nainitallakeview.com</a> ·{' '}
+              <a href="tel:+919999900000" className="text-primary hover:underline">+91 99999 00000</a>
             </p>
           </motion.div>
         </div>

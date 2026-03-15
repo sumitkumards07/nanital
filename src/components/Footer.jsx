@@ -29,7 +29,7 @@ export default function Footer() {
             <p className="text-dark/70 font-sans text-sm mt-1">Book your stay and enjoy the beauty of the Himalayas.</p>
           </div>
           <a
-            href="https://wa.me/8252561063"
+            href="https://wa.me/919999900000"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm hover:bg-dark/80 transition-colors whitespace-nowrap uppercase tracking-wide"
@@ -58,9 +58,9 @@ export default function Footer() {
           <div className="flex gap-3">
             {[
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
-              { icon: 'share',        href: 'https://facebook.com',    label: 'Facebook' },
-              { icon: 'chat',         href: 'https://wa.me/8252561063', label: 'WhatsApp' },
-              { icon: 'mail',         href: 'mailto:pushkar.sarraf44@gmail.com', label: 'Email' },
+              { icon: 'call',         href: 'tel:+919999900000',             label: 'Call' },
+              { icon: 'chat',         href: 'https://wa.me/919999900000',    label: 'WhatsApp' },
+              { icon: 'mail',         href: 'mailto:info@nainitallakeview.com', label: 'Email' },
             ].map((s) => (
               <a
                 key={s.label}
@@ -115,9 +115,9 @@ export default function Footer() {
           <h4 className="font-display font-bold text-slate-100 mb-6">Contact Us</h4>
           <div className="space-y-4">
             {[
-              { icon: 'call',        label: 'Phone',   value: '+91 8252561063',             href: 'tel:8252561063' },
-              { icon: 'mail',        label: 'Email',   value: 'pushkar.sarraf44@gmail.com', href: 'mailto:pushkar.sarraf44@gmail.com' },
-              { icon: 'location_on', label: 'Address', value: 'VIT Nainital, 522237\nUttarakhand, India', href: null },
+              { icon: 'call',        label: 'Phone',   value: '+91 99999 00000',             href: 'tel:+919999900000' },
+              { icon: 'mail',        label: 'Email',   value: 'info@nainitallakeview.com', href: 'mailto:info@nainitallakeview.com' },
+              { icon: 'location_on', label: 'Address', value: 'The Mall Road, Opp. Naini Lake\nNainital, Uttarakhand - 263001', href: null },
             ].map((c) => (
               <div key={c.label} className="flex items-start gap-3">
                 <div className="w-8 h-8 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">

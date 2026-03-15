@@ -10,23 +10,23 @@ export default function Contact() {
   const submit = e => {
     e.preventDefault()
     const msg = `Hello, I'm ${form.name}.\nEmail: ${form.email}\nPhone: ${form.phone}\nSubject: ${form.subject}\nMessage: ${form.message}`
-    window.open(`https://wa.me/8252561063?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/919999900000?text=${encodeURIComponent(msg)}`, '_blank')
     setSent(true)
   }
 
   const inputCls = 'w-full rounded-lg px-4 py-3 text-sm font-sans bg-dark/50 text-slate-100 placeholder:text-slate-600 border border-primary/20 hover:border-primary/40 focus:outline-none focus:ring-1 focus:ring-primary transition-all'
 
   const contactCards = [
-    {icon:'call',        title:'Phone',    val:'+91 8252561063',               href:'tel:8252561063',   sub:'Tap to call'},
-    {icon:'mail',        title:'Email',    val:'pushkar.sarraf44@gmail.com',   href:'mailto:pushkar.sarraf44@gmail.com', sub:'Send email'},
-    {icon:'location_on', title:'Address',  val:'VIT Nainital, 522237\nUttarakhand, India', href:null, sub:null},
-    {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/8252561063', sub:'Open WhatsApp'},
+    {icon:'call',        title:'Phone',    val:'+91 99999 00000',               href:'tel:+919999900000',   sub:'Tap to call'},
+    {icon:'mail',        title:'Email',    val:'info@nainitallakeview.com',   href:'mailto:info@nainitallakeview.com', sub:'Send email'},
+    {icon:'location_on', title:'Address',  val:'The Mall Road, Opp. Naini Lake\nNainital, Uttarakhand - 263001', href:null, sub:null},
+    {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/919999900000', sub:'Open WhatsApp'},
   ]
 
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=60" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_facade_day.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Get in Touch</motion.p>
@@ -108,7 +108,7 @@ export default function Contact() {
               <div className="bg-dark/40 border border-primary/10 rounded-xl overflow-hidden shadow-royal">
                 <div className="p-5 border-b border-primary/10">
                   <h3 className="font-display text-xl text-slate-100 font-bold">Find Us</h3>
-                  <p className="font-sans text-slate-500 text-sm">VIT Nainital, Uttarakhand</p>
+                  <p className="font-sans text-slate-500 text-sm">The Mall Road, Nainital, Uttarakhand</p>
                 </div>
                 <div className="h-64">
                   <iframe
@@ -122,7 +122,7 @@ export default function Contact() {
               <div className="bg-dark/40 border border-primary/10 rounded-xl p-6">
                 <h3 className="font-display text-xl text-slate-100 font-bold mb-4">Connect with Us</h3>
                 <div className="grid grid-cols-3 gap-3">
-                  {[{icon:'call',label:'Call',href:'tel:8252561063',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/8252561063',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:pushkar.sarraf44@gmail.com',bg:'bg-red-600'}].map(s => (
+                  {[{icon:'call',label:'Call',href:'tel:+919999900000',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/919999900000',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:info@nainitallakeview.com',bg:'bg-red-600'}].map(s => (
                     <a key={s.label} href={s.href} target={s.href.startsWith('http')?'_blank':undefined} rel="noopener noreferrer"
                       className={`${s.bg} text-white rounded-xl p-3 flex flex-col items-center gap-1 hover:opacity-90 transition-opacity`}>
                       <span className="material-symbols-outlined text-xl">{s.icon}</span>

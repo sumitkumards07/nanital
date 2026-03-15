@@ -27,7 +27,7 @@ export default function WhatsAppButton() {
               Have questions or want to book? Chat with our team instantly on WhatsApp!
             </p>
             <a
-              href="https://wa.me/8252561063?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Nainital%20Lake%20View%20Hotel."
+              href="https://wa.me/919999900000?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Nainital%20Lake%20View%20Hotel."
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-green-500 hover:bg-green-600 text-white text-center text-xs font-sans font-bold py-2 px-4 rounded-lg transition-colors"

@@ -14,8 +14,8 @@ export default function Hero() {
       {/* Parallax image */}
       <motion.div style={{ y }} className="absolute inset-0 scale-110 z-0">
         <img
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=90"
-          alt="Nainital Lake View Hotel"
+          src="/images/hotel_facade_wide.jpg"
+          alt="Alka The Lake Side Hotel"
           className="w-full h-full object-cover"
         />
       </motion.div>

@@ -8,7 +8,7 @@ export default function Testimonials() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=60" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_terrace_fountain.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Guest Reviews</motion.p>
@@ -69,7 +69,7 @@ export default function Testimonials() {
             <h3 className="font-display text-3xl text-dark font-bold mb-3">Stayed With Us Recently?</h3>
             <p className="font-sans text-dark/70 text-sm mb-6 max-w-xl mx-auto">Share your feedback and help future guests make the right choice.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://wa.me/8252561063?text=I%20would%20like%20to%20share%20my%20feedback%20about%20Nainital%20Lake%20View%20Hotel."
+              <a href="https://wa.me/919999900000?text=I%20would%20like%20to%20share%20my%20feedback%20about%20Nainital%20Lake%20View%20Hotel."
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:bg-dark/80 transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> Share on WhatsApp

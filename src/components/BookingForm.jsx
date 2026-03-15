@@ -57,7 +57,7 @@ export default function BookingForm({ defaultRoom = '' }) {
     if (Object.keys(errs).length) { setErrors(errs); return }
     setSubmitted(true)
     setTimeout(() => {
-      window.open(`https://wa.me/8252561063?text=${buildWhatsAppMsg(form)}`, '_blank')
+      window.open(`https://wa.me/919999900000?text=${buildWhatsAppMsg(form)}`, '_blank')
     }, 700)
   }
 

@@ -18,7 +18,7 @@ export default function Booking() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1920&q=60" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_exterior_terrace.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Reservations</motion.p>
@@ -79,7 +79,7 @@ export default function Booking() {
               <h3 className="font-display text-lg text-slate-100 font-bold mb-3">Concierge Desk</h3>
               <p className="font-sans text-slate-400 text-sm mb-4">Available 24/7 for your personalized requirements.</p>
               <div className="space-y-3">
-                {[{icon:'call',label:'Call Us',val:'+91 8252561063',href:'tel:8252561063'},{icon:'mail',label:'Email Us',val:'pushkar.sarraf44@gmail.com',href:'mailto:pushkar.sarraf44@gmail.com'}].map(c => (
+                {[{icon:'call',label:'Call Us',val:'+91 99999 00000',href:'tel:+919999900000'},{icon:'mail',label:'Email Us',val:'info@nainitallakeview.com',href:'mailto:info@nainitallakeview.com'}].map(c => (
                   <a key={c.label} href={c.href} className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-primary/5 transition-colors group">
                     <span className="material-symbols-outlined text-primary text-lg">{c.icon}</span>
                     <div>
@@ -89,7 +89,7 @@ export default function Booking() {
                   </a>
                 ))}
               </div>
-              <a href="https://wa.me/8252561063" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/919999900000" target="_blank" rel="noopener noreferrer"
                 className="mt-4 w-full flex items-center justify-center gap-2 border border-primary text-primary rounded-lg py-2.5 font-sans font-bold text-sm uppercase hover:bg-primary hover:text-dark transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Chat
               </a>

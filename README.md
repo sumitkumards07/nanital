@@ -2,7 +2,7 @@
 
 > **Your comfort, our priority** — A luxury hotel website for Nainital, Uttarakhand.
 
-![Nature + Royal Theme](https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80)
+![Nature + Royal Theme](/images/hotel_facade_wide.jpg)
 
 ---
 

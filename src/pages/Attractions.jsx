@@ -9,7 +9,7 @@ export default function Attractions() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-30"><img src="https://images.unsplash.com/photo-1580289136687-713c3b64cb2a?w=1920&q=60" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-30"><img src="/images/hotel_facade_wide.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/65" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Discover Nainital</motion.p>
@@ -43,7 +43,7 @@ export default function Attractions() {
             className="mt-16 bg-dark/40 border border-primary/10 rounded-xl overflow-hidden shadow-royal">
             <div className="p-5 border-b border-primary/10">
               <h3 className="font-display text-xl text-slate-100 font-bold">Our Location in Nainital</h3>
-              <p className="font-sans text-slate-500 text-sm">VIT Nainital, Uttarakhand – 522237</p>
+              <p className="font-sans text-slate-500 text-sm">The Mall Road, Nainital, Uttarakhand – 263001</p>
             </div>
             <div className="h-80">
               <iframe

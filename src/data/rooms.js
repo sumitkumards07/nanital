@@ -16,11 +16,10 @@ export const rooms = [
     longDescription:
       'Step into the cozy elegance of our Standard Rooms, where every detail has been carefully curated to ensure your comfort. The rooms feature warm wood-toned furniture, plush bedding, and soft ambient lighting that creates the perfect atmosphere for relaxation. With a modern attached bathroom equipped with hot water facilities and contemporary fixtures, you\'ll enjoy all the conveniences of home amidst the natural beauty of Nainital.',
     images: [
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80',
-      'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80',
-      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80',
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80',
+      '/images/room_interior_1.png',
+      '/images/room_interior_2.png',
+      '/images/hotel_courtyard.jpg',
+      '/images/hotel_lobby_staircase.jpg',
     ],
     amenities: [
       { icon: 'Bed', label: '2 Double Beds' },
@@ -52,11 +51,11 @@ export const rooms = [
     longDescription:
       'The Deluxe Mountain View rooms are designed for those who seek both comfort and extraordinary natural beauty. These spacious rooms boast large picture windows and a private balcony from which you can soak in the breathtaking panorama of the Kumaon hills and Naini Lake. Furnished with premium king-size beds, rich fabrics, and curated local artwork, each room is a blend of luxury and Himalayan heritage. The marble-finished bathroom features a rain shower and premium toiletries.',
     images: [
-      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80',
-      'https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80',
-      'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&q=80',
-      'https://images.unsplash.com/photo-1521782462922-9318a7ca9d75?w=800&q=80',
-      'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80',
+      '/images/hotel_exterior_terrace.jpg',
+      '/images/room_interior_2.png',
+      '/images/room_interior_1.png',
+      '/images/hotel_facade_day.jpg',
+      '/images/restaurant_interior.png',
     ],
     amenities: [
       { icon: 'Bed', label: '2 Double Beds' },
@@ -90,11 +89,11 @@ export const rooms = [
     longDescription:
       'The Family Suite is our most spacious and opulent offering, designed to provide an extraordinary experience for families traveling together. Spread across a generously proportioned layout, the suite features a dedicated living room with plush sofas, a fully stocked minibar, and a dining corner. The bedrooms come equipped with premium king-size beds dressed in Egyptian cotton linen. The panoramic windows offer sweeping views of the Naini Lake and the surrounding Himalayan foothills. The ensuite bathrooms feature separate shower and soaking tub, perfect for winding down after a day of exploration.',
     images: [
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80',
-      'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=800&q=80',
-      'https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?w=800&q=80',
-      'https://images.unsplash.com/photo-1631049552057-403cdb8f0658?w=800&q=80',
-      'https://images.unsplash.com/photo-1620332372374-f108c53d2e03?w=800&q=80',
+      '/images/hotel_facade_wide.jpg',
+      '/images/room_interior_1.png',
+      '/images/room_interior_2.png',
+      '/images/hotel_terrace_fountain.jpg',
+      '/images/hotel_exterior_terrace.jpg',
     ],
     amenities: [
       { icon: 'Bed', label: '3 Double Beds' },

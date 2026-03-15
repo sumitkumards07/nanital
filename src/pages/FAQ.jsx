@@ -56,7 +56,7 @@ export default function FAQ() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=60" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_lobby_staircase.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Help Centre</motion.p>
@@ -88,10 +88,10 @@ export default function FAQ() {
             <h3 className="font-display text-2xl text-dark font-bold mb-3">Still Have Questions?</h3>
             <p className="font-sans text-dark/70 text-sm mb-6">Our team is available 24/7 to help.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:8252561063" className="inline-flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:bg-dark/80 transition-all">
-                <span className="material-symbols-outlined text-sm">call</span> Call: +91 8252561063
+              <a href="tel:+919999900000" className="inline-flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:bg-dark/80 transition-all">
+                <span className="material-symbols-outlined text-sm">call</span> Call: +91 99999 00000
               </a>
-              <a href="https://wa.me/8252561063" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/919999900000" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border-2 border-dark/30 text-dark px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:border-dark/60 transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
               </a>

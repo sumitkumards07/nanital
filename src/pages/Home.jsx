@@ -95,14 +95,14 @@ export default function Home() {
             className="lg:w-1/2 relative"
           >
             <div className="img-zoom rounded-xl shadow-royal overflow-hidden aspect-[4/5]">
-              <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80" alt="Hotel Lobby" className="w-full h-full object-cover" />
+              <img src="/images/hotel_lobby_staircase.jpg" alt="Hotel Lobby" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block">
               <p className="text-dark font-display text-4xl font-bold">10+</p>
               <p className="text-dark text-xs font-sans uppercase tracking-widest font-bold mt-1">Years of<br/>Excellence</p>
             </div>
             <div className="absolute -top-5 -left-5 w-36 h-36 rounded-xl overflow-hidden shadow-royal border-2 border-primary/30 hidden md:block img-zoom">
-              <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=300&q=80" alt="Lake View" className="w-full h-full object-cover" />
+              <img src="/images/hotel_exterior_terrace.jpg" alt="Lake View" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
@@ -165,7 +165,7 @@ export default function Home() {
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark/75 z-10" />
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80" alt="Snow View Point Nainital" className="w-full h-full object-cover" />
+          <img src="/images/hotel_facade_wide.jpg" alt="Hotel Panorama" className="w-full h-full object-cover" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -201,12 +201,12 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
-              { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80', span: 'col-span-2 row-span-2', h: 'h-64 md:h-80' },
-              { src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400&q=80', span: '', h: 'h-40' },
-              { src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&q=80', span: '', h: 'h-40' },
-              { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80', span: '', h: 'h-40' },
-              { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80', span: '', h: 'h-40' },
-              { src: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&q=80', span: '', h: 'h-40' },
+              { src: '/images/hotel_facade_day.jpg', span: 'col-span-2 row-span-2', h: 'h-64 md:h-80' },
+              { src: '/images/room_interior_1.png', span: '', h: 'h-40' },
+              { src: '/images/hotel_exterior_terrace.jpg', span: '', h: 'h-40' },
+              { src: '/images/hotel_lobby_staircase.jpg', span: '', h: 'h-40' },
+              { src: '/images/restaurant_interior.png', span: '', h: 'h-40' },
+              { src: '/images/hotel_terrace_fountain.jpg', span: '', h: 'h-40' },
             ].map(({ src, span, h }, i) => (
               <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }}
                 className={`img-zoom rounded-xl overflow-hidden border border-primary/10 ${span}`}
@@ -246,13 +246,12 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-display text-4xl font-bold text-slate-100 mb-4">Ready for Your Mountain Escape?</h2>
             <p className="font-sans text-slate-400 text-base mb-8">Book your stay at Nainital Lake View Hotel. Starting from just ₹1,500 per night.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/booking" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm">
-                Book Now — From ₹1,500
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link to="/booking" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
+                <span className="material-symbols-outlined text-sm">calendar_month</span> Book Now
               </Link>
-              <a href="tel:8252561063" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
-                <span className="material-symbols-outlined text-sm">call</span>
-                Call Us Now
+              <a href="tel:+919999900000" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined text-sm">call</span> Call +91 99999 00000
               </a>
             </div>
             <p className="font-sans text-slate-500 text-xs mt-4">Instant WhatsApp confirmation · Check-in 12 PM · Free cancellation*</p>
