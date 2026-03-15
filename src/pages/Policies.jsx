@@ -58,7 +58,7 @@ export default function Policies() {
           <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} className="mt-10 text-center">
             <p className="font-sans text-slate-500 text-xs">Last updated: January 2025. Policies subject to change — please verify before your visit.</p>
             <p className="font-sans text-slate-500 text-xs mt-1">
-              Queries: <a href="mailto:info@alkathelakesidehotel.com" className="text-primary hover:underline">info@alkathelakesidehotel.com</a> ·{' '}
+              Queries: <a href="mailto:sharmakamal2192@gmail.com" className="text-primary hover:underline">sharmakamal2192@gmail.com</a> ·{' '}
               <a href="tel:+917206073010" className="text-primary hover:underline">+91 7206073010</a>
             </p>
           </motion.div>

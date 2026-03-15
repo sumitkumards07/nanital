@@ -18,7 +18,7 @@ export default function Contact() {
 
   const contactCards = [
     {icon:'call',        title:'Phone',    val:'+91 7206073010',               href:'tel:+917206073010',   sub:'Tap to call'},
-    {icon:'mail',        title:'Email',    val:'info@alkathelakesidehotel.com',   href:'mailto:info@alkathelakesidehotel.com', sub:'Send email'},
+    {icon:'mail',        title:'Email',    val:'sharmakamal2192@gmail.com',   href:'mailto:sharmakamal2192@gmail.com', sub:'Send email'},
     {icon:'location_on', title:'Address',  val:'Alka The Lake Side Hotel, The Mall\nNainital, Uttarakhand 263001', href:null, sub:null},
     {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/917206073010', sub:'Open WhatsApp'},
   ]
@@ -122,7 +122,7 @@ export default function Contact() {
               <div className="bg-dark/40 border border-primary/10 rounded-xl p-6">
                 <h3 className="font-display text-xl text-slate-100 font-bold mb-4">Connect with Us</h3>
                 <div className="grid grid-cols-3 gap-3">
-                  {[{icon:'call',label:'Call',href:'tel:+917206073010',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/917206073010',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:info@alkathelakesidehotel.com',bg:'bg-red-600'}].map(s => (
+                  {[{icon:'call',label:'Call',href:'tel:+917206073010',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/917206073010',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:sharmakamal2192@gmail.com',bg:'bg-red-600'}].map(s => (
                     <a key={s.label} href={s.href} target={s.href.startsWith('http')?'_blank':undefined} rel="noopener noreferrer"
                       className={`${s.bg} text-white rounded-xl p-3 flex flex-col items-center gap-1 hover:opacity-90 transition-opacity`}>
                       <span className="material-symbols-outlined text-xl">{s.icon}</span>
