@@ -1,0 +1,67 @@
+export const attractions = [
+  {
+    id: 1,
+    name: 'Naini Lake',
+    distance: '0.5 km',
+    duration: '2–3 hours',
+    category: 'Nature',
+    image: 'https://images.unsplash.com/photo-1580289136687-713c3b64cb2a?w=800&q=80',
+    description:
+      'The iconic crescent-shaped Naini Lake is the heart of Nainital. Enjoy boating, lakeside strolls, and spectacular reflections of the surrounding hills in its crystal-clear waters.',
+    highlights: ['Boating', 'Lakeside Walk', 'Photography', 'Boat House Club'],
+    bestTime: 'Early morning or sunset',
+    tip: 'Book rowing boats early to avoid queues. The sunset view from the lake is spectacular.',
+  },
+  {
+    id: 2,
+    name: 'Snow View Point',
+    distance: '2.5 km',
+    duration: '2–3 hours',
+    category: 'Viewpoint',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    description:
+      'Accessible via ropeway or trekking, Snow View Point offers breathtaking panoramic views of the snow-capped Himalayan peaks including Nanda Devi. On clear days, you can see peaks from 300 km away.',
+    highlights: ['Ropeway Ride', 'Himalayan Panorama', 'Binoculars', 'Souvenir Shops'],
+    bestTime: 'Morning for clear views',
+    tip: 'Take the aerial ropeway for a thrilling 4-minute ride to the top.',
+  },
+  {
+    id: 3,
+    name: 'Eco Cave Gardens',
+    distance: '1.5 km',
+    duration: '1–2 hours',
+    category: 'Nature',
+    image: 'https://images.unsplash.com/photo-1518623001395-125242310d0c?w=800&q=80',
+    description:
+      'A unique series of interconnected caves named after Himalayan animals. Perfect for children and families, these natural rocky caves feature a musical fountain and hanging garden.',
+    highlights: ['Cave Exploration', 'Musical Fountain', 'Hanging Garden', 'Kids Activities'],
+    bestTime: 'Afternoons',
+    tip: 'The caves can be narrow — great fun for kids but adults should be prepared to crawl!',
+  },
+  {
+    id: 4,
+    name: 'Naina Devi Temple',
+    distance: '1 km',
+    duration: '1 hour',
+    category: 'Spiritual',
+    image: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?w=800&q=80',
+    description:
+      'One of the 51 Shakti Peethas, this revered temple dedicated to Goddess Naina Devi sits on the northern shore of Naini Lake. A spiritual journey combined with stunning lakeside scenery.',
+    highlights: ['Spiritual Experience', 'Lake Views', 'Local Culture', 'Ancient Architecture'],
+    bestTime: 'Early morning during aarti',
+    tip: 'Visit during the morning or evening aarti for a divine experience.',
+  },
+  {
+    id: 5,
+    name: 'Mall Road',
+    distance: '0.8 km',
+    duration: '2–3 hours',
+    category: 'Shopping',
+    image: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=80',
+    description:
+      'The vibrant lifeline of Nainital, Mall Road stretches along the lakeside offering a delightful mix of shops, restaurants, and street food. Browse local handicrafts, woollens, and famous Nainital candles.',
+    highlights: ['Shopping', 'Street Food', 'Cafés', 'Lakeside Views'],
+    bestTime: 'Evening for best atmosphere',
+    tip: 'Try the famous Nainital candles and local honey — unique souvenirs to take back.',
+  },
+]

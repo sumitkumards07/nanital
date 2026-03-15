@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Reference Design System ──────────────────────────────────────
+   Primary:        #f2d00d  (gold)
+   Background Dark:#221f10
+   Background Light:#f8f8f5
+   Headings:       Noto Serif
+   Body:           Noto Sans
+   Icons:          Google Material Symbols Outlined
+─────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #221f10;
+    color: #f1f5f9;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3,h4,h5,h6 { font-family: 'Noto Serif', serif; }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    display: inline-block; line-height: 1;
+  }
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #221f10; }
+::-webkit-scrollbar-thumb { background: rgba(242,208,13,0.35); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #f2d00d; }
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-dark px-6 py-3 rounded-lg font-sans font-bold uppercase tracking-wide
+           transition-all duration-200 hover:brightness-110 hover:scale-105
+           active:scale-95 inline-flex items-center gap-2 text-sm;
+  }
+  .btn-gold {
+    @apply bg-primary text-dark px-6 py-3 rounded-lg font-sans font-bold uppercase tracking-wide
+           transition-all duration-200 hover:brightness-110 hover:scale-105
+           active:scale-95 inline-flex items-center gap-2 text-sm;
+  }
+  .btn-outline {
+    @apply border border-primary text-primary px-6 py-3 rounded-lg font-sans font-bold uppercase tracking-wide
+           transition-all duration-200 hover:bg-primary hover:text-dark
+           active:scale-95 inline-flex items-center gap-2 text-sm;
+  }
+  .page-hero {
+    @apply relative h-64 md:h-80 lg:h-96 flex items-center justify-center overflow-hidden;
+    background: linear-gradient(135deg, #221f10 0%, #3a3318 60%, #221f10 100%);
+  }
+  .section-title  { @apply font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 leading-tight; }
+  .section-subtitle { @apply font-sans text-slate-400 text-base mt-3; }
+  .gold-divider   { @apply w-16 h-px bg-primary my-4; }
+  .glass-card     { @apply bg-dark/40 border border-primary/10 rounded-xl; }
+  .glass-dark     { @apply bg-dark/80 backdrop-blur-md border border-primary/20 rounded-xl; }
+  .img-zoom       { @apply overflow-hidden; }
+  .img-zoom img   { transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94); }
+  .img-zoom:hover img { transform: scale(1.08); }
+  .room-card-hover { transition: transform 0.35s ease, box-shadow 0.35s ease; }
+  .room-card-hover:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
+  .reveal { opacity:0; transform:translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+}
+
+@keyframes float       { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+@keyframes shimmerGold { 0%{background-position:-200% center} 100%{background-position:200% center} }
+@keyframes pulseGold   { 0%,100%{box-shadow:0 0 0 0 rgba(242,208,13,0.4)} 50%{box-shadow:0 0 0 14px rgba(242,208,13,0)} }
+@keyframes fadeUp      { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+
+.shimmer-text {
+  background: linear-gradient(90deg,#d4a800 0%,#f2d00d 30%,#fff5b0 50%,#f2d00d 70%,#d4a800 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerGold 4s linear infinite;
+}
+.whatsapp-btn { animation: pulseGold 2.5s ease-in-out infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.scrollbar-hide { -ms-overflow-style:none; scrollbar-width:none; }
+.scrollbar-hide::-webkit-scrollbar { display:none; }
