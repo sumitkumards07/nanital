@@ -88,10 +88,10 @@ export default function FAQ() {
             <h3 className="font-display text-2xl text-dark font-bold mb-3">Still Have Questions?</h3>
             <p className="font-sans text-dark/70 text-sm mb-6">Our team is available 24/7 to help.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919999900000" className="inline-flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:bg-dark/80 transition-all">
-                <span className="material-symbols-outlined text-sm">call</span> Call: +91 99999 00000
+              <a href="tel:+917206073010" className="inline-flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:bg-dark/80 transition-all">
+                <span className="material-symbols-outlined text-sm">call</span> Call: +91 7206073010
               </a>
-              <a href="https://wa.me/919999900000" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/917206073010" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border-2 border-dark/30 text-dark px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:border-dark/60 transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
               </a>

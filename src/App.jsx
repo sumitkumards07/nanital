@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import WhatsAppButton from './components/WhatsAppButton'
+import ContactButtons from './components/ContactButtons'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -102,7 +102,7 @@ export default function App() {
           <AnimatedRoutes />
         </main>
         <Footer />
-        <WhatsAppButton />
+        <ContactButtons />
       </div>
     </Router>
   )

@@ -51,10 +51,10 @@ export default function Rooms() {
               <p className="font-sans text-slate-400 text-sm">Our team is available to help you select the perfect room.</p>
             </div>
             <div className="flex gap-3">
-              <a href="tel:+919999900000" className="flex items-center gap-2 bg-primary text-dark px-5 py-2.5 rounded-lg font-sans font-bold text-sm uppercase">
+              <a href="tel:+917206073010" className="flex items-center gap-2 bg-primary text-dark px-5 py-2.5 rounded-lg font-sans font-bold text-sm uppercase">
                 <span className="material-symbols-outlined text-sm">call</span> Call Us
               </a>
-              <a href="https://wa.me/919999900000" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/917206073010" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 border border-primary text-primary px-5 py-2.5 rounded-lg font-sans font-bold text-sm uppercase hover:bg-primary hover:text-dark transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp
               </a>

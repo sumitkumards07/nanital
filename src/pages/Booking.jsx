@@ -79,7 +79,7 @@ export default function Booking() {
               <h3 className="font-display text-lg text-slate-100 font-bold mb-3">Concierge Desk</h3>
               <p className="font-sans text-slate-400 text-sm mb-4">Available 24/7 for your personalized requirements.</p>
               <div className="space-y-3">
-                {[{icon:'call',label:'Call Us',val:'+91 99999 00000',href:'tel:+919999900000'},{icon:'mail',label:'Email Us',val:'info@nainitallakeview.com',href:'mailto:info@nainitallakeview.com'}].map(c => (
+                {[{icon:'call',label:'Call Us',val:'+91 7206073010',href:'tel:+917206073010'},{icon:'mail',label:'Email Us',val:'info@nainitallakeview.com',href:'mailto:info@nainitallakeview.com'}].map(c => (
                   <a key={c.label} href={c.href} className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-primary/5 transition-colors group">
                     <span className="material-symbols-outlined text-primary text-lg">{c.icon}</span>
                     <div>
@@ -89,7 +89,7 @@ export default function Booking() {
                   </a>
                 ))}
               </div>
-              <a href="https://wa.me/919999900000" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/917206073010" target="_blank" rel="noopener noreferrer"
                 className="mt-4 w-full flex items-center justify-center gap-2 border border-primary text-primary rounded-lg py-2.5 font-sans font-bold text-sm uppercase hover:bg-primary hover:text-dark transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Chat
               </a>

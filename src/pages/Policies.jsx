@@ -59,7 +59,7 @@ export default function Policies() {
             <p className="font-sans text-slate-500 text-xs">Last updated: January 2025. Policies subject to change — please verify before your visit.</p>
             <p className="font-sans text-slate-500 text-xs mt-1">
               Queries: <a href="mailto:info@nainitallakeview.com" className="text-primary hover:underline">info@nainitallakeview.com</a> ·{' '}
-              <a href="tel:+919999900000" className="text-primary hover:underline">+91 99999 00000</a>
+              <a href="tel:+917206073010" className="text-primary hover:underline">+91 7206073010</a>
             </p>
           </motion.div>
         </div>
