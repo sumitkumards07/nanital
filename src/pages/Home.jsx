@@ -83,6 +83,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Rooms */}
+      <section className="py-24 px-6 lg:px-20 bg-dark/30">
+        <div className="max-w-7xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+            <SectionLabel>Accommodations</SectionLabel>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-slate-100 mb-4">Our Rooms &amp; Suites</h2>
+            <Divider />
+            <p className="font-sans text-slate-400 max-w-xl mx-auto mt-4">48 carefully curated rooms — from cozy retreats to lavish suites, every space is a sanctuary.</p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {rooms.map((room, i) => <RoomCard key={room.id} room={room} index={i} />)}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/rooms" className="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm">
+              View All Rooms
+              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* About */}
       <section className="py-24 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
@@ -137,27 +158,6 @@ export default function Home() {
               Learn More About Us
             </Link>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Rooms */}
-      <section className="py-24 px-6 lg:px-20 bg-dark/30">
-        <div className="max-w-7xl mx-auto">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <SectionLabel>Accommodations</SectionLabel>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-slate-100 mb-4">Our Rooms &amp; Suites</h2>
-            <Divider />
-            <p className="font-sans text-slate-400 max-w-xl mx-auto mt-4">48 carefully curated rooms — from cozy retreats to lavish suites, every space is a sanctuary.</p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {rooms.map((room, i) => <RoomCard key={room.id} room={room} index={i} />)}
-          </div>
-          <div className="text-center mt-10">
-            <Link to="/rooms" className="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm">
-              View All Rooms
-              <span className="material-symbols-outlined text-sm">arrow_forward</span>
-            </Link>
-          </div>
         </div>
       </section>
 
