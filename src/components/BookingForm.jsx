@@ -1,7 +1,14 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
-const roomTypes = ['Standard Room', 'Deluxe Mountain View', 'Family Suite']
+const roomTypes = [
+  '2 Bed Deluxe Room',
+  '2 Bed Super Deluxe Room',
+  '4 Bed Deluxe Room',
+  '4 Bed Super Deluxe Room',
+  'Luxury Room',
+  'Standard Room'
+]
 
 function buildWhatsAppMsg(d) {
   return encodeURIComponent(
