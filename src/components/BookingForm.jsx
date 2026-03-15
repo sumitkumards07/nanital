@@ -2,12 +2,9 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const roomTypes = [
-  '2 Bed Deluxe Room',
-  '2 Bed Super Deluxe Room',
-  '4 Bed Deluxe Room',
-  '4 Bed Super Deluxe Room',
-  'Luxury Room',
-  'Standard Room'
+  'Standard Room',
+  'Deluxe Mountain View',
+  'Family Suite',
 ]
 
 function buildWhatsAppMsg(d) {
