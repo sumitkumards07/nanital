@@ -31,10 +31,10 @@ function Banner({ label, title }) {
 }
 
 export default function About() {
-  useEffect(() => { document.title = 'About Us – Nainital Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'About Us – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
-      <Banner label="Our Story" title="About Nainital Lake View Hotel" />
+      <Banner label="Our Story" title="About Alka The Lake Side Hotel" />
 
       {/* Story */}
       <section className="py-24 px-6 lg:px-20">
@@ -46,7 +46,7 @@ export default function About() {
             </h2>
             <div className="w-16 h-px bg-primary mb-6" />
             <p className="font-sans text-slate-400 leading-relaxed mb-4">
-              Nainital Lake View Hotel was founded with a singular vision — to create a haven where the natural grandeur of the Himalayas becomes an integral part of every guest's experience. Over the years, we have grown from a small guesthouse to a 48-room boutique hotel combining royal luxury with the raw, untouched beauty of the Kumaon hills.
+              Alka The Lake Side Hotel was founded with a singular vision — to create a haven where the natural grandeur of the Himalayas becomes an integral part of every guest's experience. Over the years, we have grown from a small guesthouse to a 48-room boutique hotel combining royal luxury with the raw, untouched beauty of the Kumaon hills.
             </p>
             <p className="font-sans text-slate-400 leading-relaxed mb-8">
               Every brick of this hotel carries the warmth of our region's culture, and every smile from our staff reflects the genuine care we have for each guest who walks through our doors.
@@ -105,7 +105,7 @@ export default function About() {
             <span className="text-primary font-sans text-sm font-medium tracking-[0.2em] uppercase mb-4 block">Our Team</span>
             <h2 className="font-display text-4xl font-bold text-slate-100 mb-4">The People Behind the Magic</h2>
             <div className="w-16 h-px bg-primary mx-auto mb-4" />
-            <p className="font-sans text-slate-400 max-w-xl mx-auto text-sm">Our dedicated team of hospitality professionals is the heart of Nainital Lake View Hotel.</p>
+            <p className="font-sans text-slate-400 max-w-xl mx-auto text-sm">Our dedicated team of hospitality professionals is the heart of Alka The Lake Side Hotel.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((m, i) => (

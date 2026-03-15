@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-6">
             <span className="material-symbols-outlined text-primary text-2xl">landscape</span>
             <div>
-              <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase">Nainital Lake View</p>
+              <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase">Alka The Lake Side</p>
               <p className="text-primary/50 text-xs font-sans mt-0.5">Hotel</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
               { icon: 'call',         href: 'tel:+917206073010',             label: 'Call' },
               { icon: 'chat',         href: 'https://wa.me/917206073010',    label: 'WhatsApp' },
-              { icon: 'mail',         href: 'mailto:info@nainitallakeview.com', label: 'Email' },
+              { icon: 'mail',         href: 'mailto:info@alkathelakesidehotel.com', label: 'Email' },
             ].map((s) => (
               <a
                 key={s.label}
@@ -116,8 +116,8 @@ export default function Footer() {
           <div className="space-y-4">
             {[
               { icon: 'call',        label: 'Phone',   value: '+91 7206073010',             href: 'tel:+917206073010' },
-              { icon: 'mail',        label: 'Email',   value: 'info@nainitallakeview.com', href: 'mailto:info@nainitallakeview.com' },
-              { icon: 'location_on', label: 'Address', value: 'The Mall Road, Opp. Naini Lake\nNainital, Uttarakhand - 263001', href: null },
+              { icon: 'mail',        label: 'Email',   value: 'info@alkathelakesidehotel.com', href: 'mailto:info@alkathelakesidehotel.com' },
+              { icon: 'location_on', label: 'Address', value: 'Alka The Lake Side Hotel, The Mall,\nNainital, Uttarakhand 263001', href: null },
             ].map((c) => (
               <div key={c.label} className="flex items-start gap-3">
                 <div className="w-8 h-8 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -143,7 +143,7 @@ export default function Footer() {
       <div className="border-t border-primary/10 py-6 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-sans text-slate-500 text-xs">
-            © {new Date().getFullYear()} Nainital Lake View Hotel. All rights reserved.
+            © {new Date().getFullYear()} Alka The Lake Side Hotel. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="/policies" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Privacy &amp; Policies</Link>

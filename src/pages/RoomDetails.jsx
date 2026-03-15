@@ -17,7 +17,7 @@ export default function RoomDetails() {
   const [showForm, setShowForm] = useState(false)
 
   useEffect(() => {
-    if (room) document.title = `${room.name} – Nainital Lake View Hotel`
+    if (room) document.title = `${room.name} – Alka The Lake Side Hotel`
     window.scrollTo(0,0); setActiveImg(0)
   }, [slug, room])
 

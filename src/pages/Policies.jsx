@@ -5,13 +5,13 @@ const policies = [
   { icon:'schedule',      title:'Check-in & Check-out', items:['Check-in: 12:00 PM (noon)','Check-out: 10:00 AM','Early check-in (from 8 AM) – ₹500 extra, subject to availability','Late check-out (up to 2 PM) – ₹500 extra, on request','Valid government-issued photo ID mandatory at check-in','Foreign nationals: valid passport and visa required'] },
   { icon:'cancel',        title:'Cancellation & Refund', items:['Free cancellation up to 24 hours before check-in','Cancellations within 24 hours: one-night charge applies','No-shows charged the full booking amount','Refunds processed within 5–7 working days','All cancellations must be communicated via WhatsApp or call','Force majeure situations reviewed on a case-by-case basis'] },
   { icon:'groups',        title:'Guest Guidelines',     items:['Maximum room occupancy must not be exceeded','Children below 5 years: complimentary stay (without extra bed)','Children 5–12 years: 50% of adult tariff for an extra bed','Non-staying visitors not allowed in rooms after 10 PM','Guests responsible for safety of their own valuables','Management not liable for loss or damage to personal belongings','Noise levels must be kept minimal after 10 PM'] },
-  { icon:'smoke_free',    title:'Smoking Policy',       items:['Nainital Lake View Hotel is a 100% smoke-free property','Smoking prohibited in all rooms and indoor areas','Designated outdoor smoking areas are available','Violation incurs a ₹1,500 deep-cleaning fee','Policy applies to cigarettes, e-cigarettes, cigars, and hookahs'] },
+  { icon:'smoke_free',    title:'Smoking Policy',       items:['Alka The Lake Side Hotel is a 100% smoke-free property','Smoking prohibited in all rooms and indoor areas','Designated outdoor smoking areas are available','Violation incurs a ₹1,500 deep-cleaning fee','Policy applies to cigarettes, e-cigarettes, cigars, and hookahs'] },
   { icon:'pets',          title:'Pet Policy',            items:['Pets are not permitted on the property','This ensures comfort and hygiene for all guests','Certified service animals may be accommodated — advance notice required','Service animals must carry valid certification documents'] },
   { icon:'warning',       title:'Damage & Liability',   items:['Guests liable for any damage to hotel property','Damage assessed and charged accordingly','Theft or vandalism reported to appropriate authorities','Hotel not responsible for accidents due to guest negligence','Personal electrical appliances from outside are not permitted'] },
 ]
 
 export default function Policies() {
-  useEffect(() => { document.title = 'Hotel Policies – Nainital Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Hotel Policies – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">
@@ -31,7 +31,7 @@ export default function Policies() {
             <span className="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5">info</span>
             <div>
               <p className="font-sans font-bold text-primary text-sm">Important Notice</p>
-              <p className="font-sans text-slate-400 text-sm mt-1 leading-relaxed">By making a reservation at Nainital Lake View Hotel, you agree to abide by all hotel policies listed below. For clarifications, contact us before arrival.</p>
+              <p className="font-sans text-slate-400 text-sm mt-1 leading-relaxed">By making a reservation at Alka The Lake Side Hotel, you agree to abide by all hotel policies listed below. For clarifications, contact us before arrival.</p>
             </div>
           </motion.div>
 
@@ -58,7 +58,7 @@ export default function Policies() {
           <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} className="mt-10 text-center">
             <p className="font-sans text-slate-500 text-xs">Last updated: January 2025. Policies subject to change — please verify before your visit.</p>
             <p className="font-sans text-slate-500 text-xs mt-1">
-              Queries: <a href="mailto:info@nainitallakeview.com" className="text-primary hover:underline">info@nainitallakeview.com</a> ·{' '}
+              Queries: <a href="mailto:info@alkathelakesidehotel.com" className="text-primary hover:underline">info@alkathelakesidehotel.com</a> ·{' '}
               <a href="tel:+917206073010" className="text-primary hover:underline">+91 7206073010</a>
             </p>
           </motion.div>

@@ -70,7 +70,7 @@ function AnimatedRoutes() {
 
 function NotFound() {
   useEffect(() => {
-    document.title = '404 – Page Not Found | Nainital Lake View Hotel'
+    document.title = '404 – Page Not Found | Alka The Lake Side Hotel'
   }, [])
 
   return (

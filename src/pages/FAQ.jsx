@@ -52,7 +52,7 @@ function FAQItem({ q, a }) {
 }
 
 export default function FAQ() {
-  useEffect(() => { document.title = 'FAQ – Nainital Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'FAQ – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">

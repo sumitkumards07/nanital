@@ -1,4 +1,4 @@
-# 🏔️ Nainital Lake View Hotel
+# 🏔️ Alka The Lake Side Hotel
 
 > **Your comfort, our priority** — A luxury hotel website for Nainital, Uttarakhand.
 

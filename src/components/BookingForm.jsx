@@ -12,7 +12,7 @@ const roomTypes = [
 
 function buildWhatsAppMsg(d) {
   return encodeURIComponent(
-`Hello, I would like to book a room at Nainital Lake View Hotel.
+`Hello, I would like to book a room at Alka The Lake Side Hotel.
 
 Name: ${d.name}
 Room Type: ${d.roomType}

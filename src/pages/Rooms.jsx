@@ -8,7 +8,7 @@ const categories = ['All', 'Standard', 'Deluxe', 'Suite']
 
 export default function Rooms() {
   const [active, setActive] = useState('All')
-  useEffect(() => { document.title = 'Our Rooms – Nainital Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Our Rooms – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
   const filtered = active === 'All' ? rooms : rooms.filter(r => r.category === active)
 
   return (

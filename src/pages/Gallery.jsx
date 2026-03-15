@@ -5,7 +5,7 @@ import { galleryImages, galleryCategories } from '../data/gallery'
 
 export default function Gallery() {
   const [active, setActive] = useState('all')
-  useEffect(() => { document.title = 'Gallery – Nainital Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Gallery – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
   const filtered = active === 'all' ? galleryImages : galleryImages.filter(i => i.category === active)
 
   return (
@@ -16,7 +16,7 @@ export default function Gallery() {
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Photo Gallery</motion.p>
           <motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:0.1}} className="font-display text-4xl md:text-5xl text-slate-100 font-bold">Moments Captured</motion.h1>
-          <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.3}} className="font-sans text-slate-400 mt-3 text-sm">A visual journey through Nainital Lake View Hotel</motion.p>
+          <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.3}} className="font-sans text-slate-400 mt-3 text-sm">A visual journey through Alka The Lake Side Hotel</motion.p>
         </div>
       </div>
 
