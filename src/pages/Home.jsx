@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
@@ -24,6 +24,7 @@ const stats = [
 ]
 
 export default function Home() {
+  const [guests, setGuests] = useState(2)
   useEffect(() => { document.title = 'Alka The Lake Side Hotel – Your comfort, our priority' }, [])
 
   return (
@@ -47,17 +48,28 @@ export default function Home() {
           ))}
           <div className="flex flex-col gap-2">
             <label className="text-xs font-sans font-bold text-primary uppercase tracking-wider">Guests</label>
-            <div className="flex items-center gap-2 text-slate-100 border-b border-slate-700 pb-2">
-              <span className="material-symbols-outlined text-primary text-sm">person</span>
-              <select className="bg-transparent border-none p-0 focus:ring-0 text-sm w-full appearance-none font-sans">
-                <option className="bg-dark">2 Adults, 0 Children</option>
-                <option className="bg-dark">1 Adult</option>
-                <option className="bg-dark">2 Adults, 1 Child</option>
-                <option className="bg-dark">Family (6 guests)</option>
-              </select>
+            <div className="flex items-center justify-between text-slate-100 border-b border-slate-700 pb-2">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary text-sm">person</span>
+                <span className="text-sm font-sans">{guests} Guest{guests > 1 ? 's' : ''}</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <button 
+                  onClick={() => setGuests(prev => Math.max(1, prev - 1))}
+                  className="w-6 h-6 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary hover:text-dark transition-all"
+                >
+                  <span className="material-symbols-outlined text-xs">remove</span>
+                </button>
+                <button 
+                  onClick={() => setGuests(prev => Math.min(10, prev + 1))}
+                  className="w-6 h-6 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary hover:text-dark transition-all"
+                >
+                  <span className="material-symbols-outlined text-xs">add</span>
+                </button>
+              </div>
             </div>
           </div>
-          <Link to="/booking" className="bg-primary text-dark font-sans font-bold rounded-lg py-4 text-center uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center">
+          <Link to={`/booking?guests=${guests}`} className="bg-primary text-dark font-sans font-bold rounded-lg py-4 text-center uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center">
             Check Availability
           </Link>
         </div>

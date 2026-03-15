@@ -124,16 +124,41 @@ export default function BookingForm({ defaultRoom = '' }) {
 
       {/* Guests + Room */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
+        <div className="relative">
           <label className="block text-xs font-sans font-bold text-primary uppercase tracking-wider mb-1.5">
             <span className="material-symbols-outlined text-sm align-middle mr-1">person</span>
             Guests *
           </label>
-          <select name="guests" value={form.guests} onChange={handleChange} className={inputCls('guests')}>
-            {[1,2,3,4,5,6].map(n => (
-              <option key={n} value={`${n} Guest${n>1?'s':''}`} className="bg-dark">{n} Guest{n>1?'s':''}</option>
-            ))}
-          </select>
+          <div className="flex items-center justify-between border border-primary/20 rounded-lg px-4 py-2.5 bg-dark/50">
+            <span className="text-sm font-sans text-slate-100">
+              {form.guests}
+            </span>
+            <div className="flex items-center gap-3">
+              <button 
+                type="button"
+                onClick={() => {
+                  const current = parseInt(form.guests) || 1
+                  const next = Math.max(1, current - 1)
+                  setForm(prev => ({ ...prev, guests: `${next} Guest${next > 1 ? 's' : ''}` }))
+                }}
+                className="w-7 h-7 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-dark transition-all"
+              >
+                <span className="material-symbols-outlined text-sm">remove</span>
+              </button>
+              <button 
+                type="button"
+                onClick={() => {
+                  const current = parseInt(form.guests) || 1
+                  const next = Math.min(10, current + 1)
+                  setForm(prev => ({ ...prev, guests: `${next} Guest${next > 1 ? 's' : ''}` }))
+                }}
+                className="w-7 h-7 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-dark transition-all"
+              >
+                <span className="material-symbols-outlined text-sm">add</span>
+              </button>
+            </div>
+          </div>
+          {errors.guests && <p className="text-red-400 text-xs mt-1 font-sans">{errors.guests}</p>}
         </div>
         <div>
           <label className="block text-xs font-sans font-bold text-primary uppercase tracking-wider mb-1.5">
