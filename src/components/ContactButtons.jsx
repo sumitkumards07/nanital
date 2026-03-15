@@ -10,14 +10,13 @@ export default function ContactButtons() {
         <motion.a
           href={`tel:+91${phone}`}
           initial={{ opacity: 0, scale: 0.5, x: -20 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          whileHover={{ scale: 1.1 }}
+          animate={{ opacity: 1, x: 0, scale: [1, 1.1, 1] }}
+          whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.9 }}
-          // Subtle popping animation
-          animate={{ scale: [1, 1.1, 1] }}
           transition={{
-            scale: { duration: 2.5, repeat: Infinity, ease: 'easeInOut' },
-            opacity: { duration: 0.3 }
+            opacity: { duration: 0.5 },
+            x: { duration: 0.5 },
+            scale: { duration: 2.5, repeat: Infinity, ease: 'easeInOut' }
           }}
           className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-royal border border-white/20 group relative"
           aria-label="Call Us"
@@ -32,18 +31,17 @@ export default function ContactButtons() {
       {/* WhatsApp Button - Right Side */}
       <div className="fixed bottom-6 right-6 z-50">
         <motion.a
-          href={`https://wa.me/91${phone}?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Nainital%20Lake%20View%20Hotel.`}
+          href={`https://wa.me/91${phone}?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Alka%20The%20Lake%20Side%20Hotel.`}
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, scale: 0.5, x: 20 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
-          whileHover={{ scale: 1.1 }}
+          animate={{ opacity: 1, x: 0, scale: [1, 1.1, 1] }}
+          whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.9 }}
-          // Subtle popping animation
-          animate={{ scale: [1, 1.1, 1] }}
           transition={{
-            scale: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
-            opacity: { duration: 0.3 }
+            opacity: { duration: 0.5 },
+            x: { duration: 0.5 },
+            scale: { duration: 2, repeat: Infinity, ease: 'easeInOut' }
           }}
           className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-royal border border-white/20 group relative"
           aria-label="WhatsApp"
