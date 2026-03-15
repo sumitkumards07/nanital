@@ -116,14 +116,14 @@ export default function Home() {
             className="lg:w-1/2 relative"
           >
             <div className="img-zoom rounded-xl shadow-royal overflow-hidden aspect-[4/5]">
-              <img src="/images/hotel_lobby_staircase.jpg" alt="Hotel Lobby" className="w-full h-full object-cover" />
+              <img src="/images/hotel_facade_day.jpg" alt="Hotel Facade" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block">
               <p className="text-dark font-display text-4xl font-bold">10+</p>
               <p className="text-dark text-xs font-sans uppercase tracking-widest font-bold mt-1">Years of<br/>Excellence</p>
             </div>
             <div className="absolute -top-5 -left-5 w-36 h-36 rounded-xl overflow-hidden shadow-royal border-2 border-primary/30 hidden md:block img-zoom">
-              <img src="/images/hotel_exterior_terrace.jpg" alt="Lake View" className="w-full h-full object-cover" />
+              <img src="/images/hotel_courtyard.jpg" alt="Hotel Courtyard" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
