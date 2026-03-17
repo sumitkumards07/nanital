@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { Suspense, lazy, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ContactButtons from './components/ContactButtons'
@@ -115,6 +116,7 @@ export default function App() {
         </main>
         <Footer />
         <ContactButtons />
+        <Analytics />
       </div>
     </Router>
   )

@@ -17,7 +17,7 @@ export default function AttractionCard({ attraction, index = 0 }) {
       className="group bg-dark/40 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/40 transition-all duration-300"
     >
       <div className="h-52 img-zoom overflow-hidden relative">
-        <img src={attraction.image} alt={attraction.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
+        <img src={attraction.image} alt={attraction.name} className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent" />
         <div className="absolute bottom-3 right-3 bg-dark/80 backdrop-blur-sm rounded-lg px-2.5 py-1.5 flex items-center gap-1.5">
           <span className="material-symbols-outlined text-primary/70 text-xs">location_on</span>

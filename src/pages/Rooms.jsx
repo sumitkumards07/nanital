@@ -14,7 +14,7 @@ export default function Rooms() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_exterior_terrace.jpg" alt="bg" className="w-full h-full object-cover" decoding="async" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_exterior_terrace.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/60" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Accommodations</motion.p>
@@ -53,10 +53,10 @@ export default function Rooms() {
               <p className="font-sans text-slate-400 text-sm">Our team is available to help you select the perfect room.</p>
             </div>
             <div className="flex gap-3">
-              <a href="tel:+917206073010" className="flex items-center gap-2 bg-primary text-dark px-5 py-2.5 rounded-lg font-sans font-bold text-sm uppercase">
+              <a href="tel:+917496036859" className="flex items-center gap-2 bg-primary text-dark px-5 py-2.5 rounded-lg font-sans font-bold text-sm uppercase">
                 <span className="material-symbols-outlined text-sm">call</span> Call Us
               </a>
-              <a href="https://wa.me/917206073010" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/917496036859" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 border border-primary text-primary px-5 py-2.5 rounded-lg font-sans font-bold text-sm uppercase hover:bg-primary hover:text-dark transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp
               </a>

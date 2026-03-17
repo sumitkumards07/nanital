@@ -19,7 +19,7 @@ function Banner({ label, title }) {
   return (
     <div className="page-hero">
       <div className="absolute inset-0 opacity-20">
-        <img src="/images/hotel_facade_wide.jpg" alt="bg" className="w-full h-full object-cover" decoding="async" />
+        <img src="/images/hotel_facade_wide.jpg" alt="bg" className="w-full h-full object-cover" />
       </div>
       <div className="absolute inset-0 bg-dark/60" />
       <div className="relative z-10 text-center px-4">
@@ -62,14 +62,14 @@ export default function About() {
           </motion.div>
           <motion.div initial={{ opacity:0, x:40 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ duration:0.7 }} className="lg:w-1/2 space-y-4">
             <div className="img-zoom rounded-xl overflow-hidden shadow-royal h-72">
-              <img src="/images/hotel_facade_day.jpg" alt="Hotel Exterior" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src="/images/hotel_facade_day.jpg" alt="Hotel Exterior" className="w-full h-full object-cover" />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="img-zoom rounded-xl overflow-hidden shadow-soft h-44">
-                <img src="/images/hotel_exterior_terrace.jpg" alt="Lake View" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                <img src="/images/hotel_exterior_terrace.jpg" alt="Lake View" className="w-full h-full object-cover" />
               </div>
               <div className="img-zoom rounded-xl overflow-hidden shadow-soft h-44">
-                <img src="/images/hotel_lobby_staircase.jpg" alt="Hotel Lobby" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                <img src="/images/hotel_lobby_staircase.jpg" alt="Hotel Lobby" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>

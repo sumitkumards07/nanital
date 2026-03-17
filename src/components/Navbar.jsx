@@ -116,11 +116,11 @@ export default function Navbar() {
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:+917206073010"
+            href="tel:+917496036859"
             className="hidden md:flex items-center gap-2 text-slate-400 hover:text-primary text-sm font-sans transition-colors"
           >
             <span className="material-symbols-outlined text-primary text-sm">call</span>
-            <span className="hidden lg:block">+91 7206073010</span>
+            <span className="hidden lg:block">+91 7496036859</span>
           </a>
 
           <Link
@@ -179,11 +179,11 @@ export default function Navbar() {
               ))}
               <div className="pt-4 border-t border-primary/10 space-y-3">
                 <a
-                  href="tel:+917206073010"
+                  href="tel:+917496036859"
                   className="flex items-center gap-2 text-slate-400 px-3 py-2 text-sm font-sans"
                 >
                   <span className="material-symbols-outlined text-primary text-sm">call</span>
-                  +91 7206073010
+                  +91 7496036859
                 </a>
                 <Link
                   to="/booking"

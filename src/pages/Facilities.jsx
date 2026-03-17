@@ -9,7 +9,7 @@ export default function Facilities() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_courtyard.jpg" alt="bg" className="w-full h-full object-cover" decoding="async" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_courtyard.jpg" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Hotel Services</motion.p>
@@ -35,7 +35,7 @@ export default function Facilities() {
             className="bg-dark/40 border border-primary/10 rounded-xl overflow-hidden shadow-royal">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="h-64 md:h-auto img-zoom overflow-hidden">
-                <img src="/images/restaurant_interior.png" alt="Restaurant" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                <img src="/images/restaurant_interior.png" alt="Restaurant" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <span className="text-primary font-sans text-sm font-medium tracking-[0.2em] uppercase mb-4 block">Dining Experience</span>

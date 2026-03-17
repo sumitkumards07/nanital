@@ -14,10 +14,9 @@ export default function Hero() {
       {/* Parallax image */}
       <motion.div style={{ y }} className="absolute inset-0 scale-110 z-0">
         <img
-          src="/images/premium_hero_alka_nainital.png"
+          src="/images/hotel_facade_wide.jpg"
           alt="Alka The Lake Side Hotel"
           className="w-full h-full object-cover"
-          fetchpriority="high"
         />
       </motion.div>
 

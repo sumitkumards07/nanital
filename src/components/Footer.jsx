@@ -29,7 +29,7 @@ export default function Footer() {
             <p className="text-dark/70 font-sans text-sm mt-1">Book your stay and enjoy the beauty of the Himalayas.</p>
           </div>
           <a
-            href="https://wa.me/917206073010"
+            href="https://wa.me/917496036859"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm hover:bg-dark/80 transition-colors whitespace-nowrap uppercase tracking-wide"
@@ -58,8 +58,8 @@ export default function Footer() {
           <div className="flex gap-3">
             {[
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
-              { icon: 'call',         href: 'tel:+917206073010',             label: 'Call' },
-              { icon: 'chat',         href: 'https://wa.me/917206073010',    label: 'WhatsApp' },
+              { icon: 'call',         href: 'tel:+917496036859',             label: 'Call' },
+              { icon: 'chat',         href: 'https://wa.me/917496036859',    label: 'WhatsApp' },
               { icon: 'mail',         href: 'mailto:sharmakamal2192@gmail.com', label: 'Email' },
             ].map((s) => (
               <a
@@ -115,7 +115,7 @@ export default function Footer() {
           <h4 className="font-display font-bold text-slate-100 mb-6">Contact Us</h4>
           <div className="space-y-4">
             {[
-              { icon: 'call',        label: 'Phone',   value: '+91 7206073010',             href: 'tel:+917206073010' },
+              { icon: 'call',        label: 'Phone',   value: '+91 7496036859',             href: 'tel:+917496036859' },
               { icon: 'mail',        label: 'Email',   value: 'sharmakamal2192@gmail.com', href: 'mailto:sharmakamal2192@gmail.com' },
               { icon: 'location_on', label: 'Address', value: 'Alka The Lake Side Hotel, The Mall,\nNainital, Uttarakhand 263001', href: null },
             ].map((c) => (

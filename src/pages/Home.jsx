@@ -128,14 +128,14 @@ export default function Home() {
             className="lg:w-1/2 relative"
           >
             <div className="img-zoom rounded-xl shadow-royal overflow-hidden aspect-[4/5]">
-              <img src="/images/hotel_facade_day.jpg" alt="Hotel Facade" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src="/images/hotel_facade_day.jpg" alt="Hotel Facade" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block">
               <p className="text-dark font-display text-4xl font-bold">10+</p>
               <p className="text-dark text-xs font-sans uppercase tracking-widest font-bold mt-1">Years of<br/>Excellence</p>
             </div>
             <div className="absolute -top-5 -left-5 w-36 h-36 rounded-xl overflow-hidden shadow-royal border-2 border-primary/30 hidden md:block img-zoom">
-              <img src="/images/hotel_courtyard.jpg" alt="Hotel Courtyard" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src="/images/hotel_courtyard.jpg" alt="Hotel Courtyard" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
@@ -177,7 +177,7 @@ export default function Home() {
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark/75 z-10" />
-          <img src="/images/hotel_facade_wide.jpg" alt="Hotel Panorama" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+          <img src="/images/hotel_facade_wide.jpg" alt="Hotel Panorama" className="w-full h-full object-cover" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -223,7 +223,7 @@ export default function Home() {
               <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }}
                 className={`img-zoom rounded-xl overflow-hidden border border-primary/10 ${span}`}
               >
-                <img src={src} alt={`Gallery ${i+1}`} className={`w-full ${h} object-cover`} loading="lazy" decoding="async" />
+                <img src={src} alt={`Gallery ${i+1}`} className={`w-full ${h} object-cover`} loading="lazy" />
               </motion.div>
             ))}
           </div>
@@ -262,8 +262,8 @@ export default function Home() {
               <Link to="/booking" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
                 <span className="material-symbols-outlined text-sm">calendar_month</span> Book Now
               </Link>
-              <a href="tel:+917206073010" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
-                <span className="material-symbols-outlined text-sm">call</span> Call +91 7206073010
+              <a href="tel:+917496036859" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined text-sm">call</span> Call +91 7496036859
               </a>
             </div>
             <p className="font-sans text-slate-500 text-xs mt-4">Instant WhatsApp confirmation · Check-in 12 PM · Free cancellation*</p>
