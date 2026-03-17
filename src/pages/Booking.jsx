@@ -13,7 +13,7 @@ const perks = [
 export default function Booking() {
   const [searchParams] = useSearchParams()
   const defaultRoom = searchParams.get('room') || ''
-  useEffect(() => { document.title = 'Book Your Stay – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Book Your Stay – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
 
   return (
     <div className="pt-20">

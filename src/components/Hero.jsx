@@ -15,7 +15,7 @@ export default function Hero() {
       <motion.div style={{ y }} className="absolute inset-0 scale-110 z-0">
         <img
           src="/images/hotel_facade_wide.jpg"
-          alt="Alka The Lake Side Hotel"
+          alt="Alka The Lake View Hotel"
           className="w-full h-full object-cover"
         />
       </motion.div>

@@ -58,7 +58,7 @@ export default function Navbar() {
           <span className="material-symbols-outlined text-primary text-3xl">landscape</span>
           <div className="hidden sm:block">
             <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase tracking-tight">
-              Nainital Lake View
+              Alka The Lake View Hotel
             </p>
             <p className="text-primary/60 text-xs font-sans tracking-widest mt-0.5">
               Your comfort, our priority

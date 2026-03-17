@@ -83,7 +83,7 @@ function AnimatedRoutes() {
 
 function NotFound() {
   useEffect(() => {
-    document.title = '404 – Page Not Found | Alka The Lake Side Hotel'
+    document.title = '404 – Page Not Found | Alka The Lake View Hotel'
   }, [])
 
   return (

@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-6">
             <span className="material-symbols-outlined text-primary text-2xl">landscape</span>
             <div>
-              <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase">Alka The Lake Side</p>
+              <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase">Alka The Lake View</p>
               <p className="text-primary/50 text-xs font-sans mt-0.5">Hotel</p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Footer() {
             {[
               { icon: 'call',        label: 'Phone',   value: '+91 7496036859',             href: 'tel:+917496036859' },
               { icon: 'mail',        label: 'Email',   value: 'sharmakamal2192@gmail.com', href: 'mailto:sharmakamal2192@gmail.com' },
-              { icon: 'location_on', label: 'Address', value: 'Alka The Lake Side Hotel, The Mall,\nNainital, Uttarakhand 263001', href: null },
+              { icon: 'location_on', label: 'Address', value: 'Alka The Lake View Hotel, The Mall,\nNainital, Uttarakhand 263001', href: null },
             ].map((c) => (
               <div key={c.label} className="flex items-start gap-3">
                 <div className="w-8 h-8 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -143,7 +143,7 @@ export default function Footer() {
       <div className="border-t border-primary/10 py-6 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-sans text-slate-500 text-xs">
-            © {new Date().getFullYear()} Alka The Lake Side Hotel. All rights reserved.
+            © {new Date().getFullYear()} Alka The Lake View Hotel. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="/policies" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Privacy &amp; Policies</Link>

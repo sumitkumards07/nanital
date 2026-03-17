@@ -8,7 +8,7 @@ const categories = ['All', 'Standard', 'Deluxe', 'Suite']
 
 export default function Rooms() {
   const [active, setActive] = useState('All')
-  useEffect(() => { document.title = 'Our Rooms – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Our Rooms – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   const filtered = active === 'All' ? rooms : rooms.filter(r => r.category === active)
 
   return (
@@ -20,7 +20,7 @@ export default function Rooms() {
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Accommodations</motion.p>
           <motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:0.1}} className="font-display text-4xl md:text-5xl text-slate-100 font-bold">Our Rooms &amp; Suites</motion.h1>
           <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.3}} className="font-sans text-slate-400 mt-4 text-sm max-w-2xl mx-auto leading-relaxed">
-            From our cozy Economy retreats to the lavish Royal Mughal-style suites, Alka The Lake Side Hotel offers the finest lake view accommodation in Nainital. Discover the perfect space for your stay, whether you're seeking a simple getaway or a luxurious family apartment on Mall Road.
+            From our cozy Economy retreats to the lavish Royal Mughal-style suites, Alka The Lake View Hotel offers the finest lake view accommodation in Nainital. Discover the perfect space for your stay, whether you're seeking a simple getaway or a luxurious family apartment on Mall Road.
           </motion.p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function Contact() {
   const [form, setForm] = useState({name:'',email:'',phone:'',subject:'',message:''})
   const [sent, setSent] = useState(false)
-  useEffect(() => { document.title = 'Contact Us – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Contact Us – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
 
   const handle = e => setForm(p => ({...p,[e.target.name]:e.target.value}))
   const submit = e => {
@@ -19,7 +19,7 @@ export default function Contact() {
   const contactCards = [
     {icon:'call',        title:'Phone',    val:'+91 7496036859',               href:'tel:+917496036859',   sub:'Tap to call'},
     {icon:'mail',        title:'Email',    val:'sharmakamal2192@gmail.com',   href:'mailto:sharmakamal2192@gmail.com', sub:'Send email'},
-    {icon:'location_on', title:'Address',  val:'Alka The Lake Side Hotel, The Mall\nNainital, Uttarakhand 263001', href:null, sub:null},
+    {icon:'location_on', title:'Address',  val:'Alka The Lake View Hotel, The Mall\nNainital, Uttarakhand 263001', href:null, sub:null},
     {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/917496036859', sub:'Open WhatsApp'},
   ]
 
@@ -108,7 +108,7 @@ export default function Contact() {
               <div className="bg-dark/40 border border-primary/10 rounded-xl overflow-hidden shadow-royal">
                 <div className="p-5 border-b border-primary/10">
                   <h3 className="font-display text-xl text-slate-100 font-bold">Find Us</h3>
-                  <p className="font-sans text-slate-500 text-sm">Alka The Lake Side Hotel, The Mall, Nainital</p>
+                  <p className="font-sans text-slate-500 text-sm">Alka The Lake View Hotel, The Mall, Nainital</p>
                 </div>
                 <div className="h-64">
                   <iframe

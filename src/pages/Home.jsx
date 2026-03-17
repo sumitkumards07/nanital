@@ -25,7 +25,7 @@ const stats = [
 
 export default function Home() {
   const [guests, setGuests] = useState(2)
-  useEffect(() => { document.title = 'Alka The Lake Side Hotel – Your comfort, our priority' }, [])
+  useEffect(() => { document.title = 'Alka The Lake View Hotel – Your comfort, our priority' }, [])
 
   return (
     <div className="overflow-hidden">
@@ -153,7 +153,7 @@ export default function Home() {
             </h2>
             <Divider />
             <p className="font-sans text-slate-400 leading-relaxed mb-6">
-              Alka The Lake Side Hotel is a premier destination located directly on Mall Road in Nainital, offering pristine views of Naini Lake. Established with a passion for mountain hospitality, we provide a royal retreat for families and honeymooners alike.
+              Alka The Lake View Hotel is a premier destination located directly on Mall Road in Nainital, offering pristine views of Naini Lake. Established with a passion for mountain hospitality, we provide a royal retreat for families and honeymooners alike.
             </p>
             <p className="font-sans text-slate-400 leading-relaxed mb-8">
               Our accommodations range from comfortable Economy rooms to lavish Royal Mughal-style suites, each thoughtfully designed to frame unobstructed views of the shimmering Naini Lake and the rolling Himalayan hills.
@@ -189,7 +189,7 @@ export default function Home() {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-slate-100 mb-6">A Sanctuary for the Senses</h2>
           <p className="font-sans text-slate-200 text-lg mb-10 leading-relaxed">
             Wake to mist-draped peaks, breathe crisp mountain air, and fall asleep to the stillness of the hills.
-            Alka The Lake Side Hotel is not just a stay — it's a transformation.
+            Alka The Lake View Hotel is not just a stay — it's a transformation.
           </p>
           <Link to="/booking" className="inline-block bg-primary text-dark px-10 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:scale-105 transition-transform text-sm">
             Reserve Your Escape
@@ -257,7 +257,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-display text-4xl font-bold text-slate-100 mb-4">Ready for Your Mountain Escape?</h2>
-            <p className="font-sans text-slate-400 text-base mb-8">Book your stay at Alka The Lake Side Hotel. Experience royalty in the heart of Nainital.</p>
+            <p className="font-sans text-slate-400 text-base mb-8">Book your stay at Alka The Lake View Hotel. Experience royalty in the heart of Nainital.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/booking" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
                 <span className="material-symbols-outlined text-sm">calendar_month</span> Book Now

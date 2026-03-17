@@ -31,10 +31,10 @@ function Banner({ label, title }) {
 }
 
 export default function About() {
-  useEffect(() => { document.title = 'About Us – Alka The Lake Side Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'About Us – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
-      <Banner label="Our Story" title="About Alka The Lake Side Hotel" />
+      <Banner label="Our Story" title="About Alka The Lake View Hotel" />
 
       {/* Story */}
       <section className="py-24 px-6 lg:px-20">
@@ -46,7 +46,7 @@ export default function About() {
             </h2>
             <div className="w-16 h-px bg-primary mb-6" />
             <p className="font-sans text-slate-400 leading-relaxed mb-6">
-              Alka The Lake Side Hotel is a premier destination located directly on Mall Road in Nainital, offering pristine views of Naini Lake. Established with a passion for mountain hospitality, we are situated just a short walk from the sacred Goddess Naina Devi Temple.
+              Alka The Lake View Hotel is a premier destination located directly on Mall Road in Nainital, offering pristine views of Naini Lake. Established with a passion for mountain hospitality, we are situated just a short walk from the sacred Goddess Naina Devi Temple.
             </p>
             <p className="font-sans text-slate-400 leading-relaxed mb-6">
               Our hotel features a range of accommodations, from comfortable Economy rooms to our signature Royal Mughal-style suites, each designed to provide a royal retreat. Whether you're here for a honeymoon or a family getaway in our spacious apartments, our legacy of genuine care ensures an unforgettable Himalayan escape.
@@ -105,7 +105,7 @@ export default function About() {
             <span className="text-primary font-sans text-sm font-medium tracking-[0.2em] uppercase mb-4 block">Our Team</span>
             <h2 className="font-display text-4xl font-bold text-slate-100 mb-4">The People Behind the Magic</h2>
             <div className="w-16 h-px bg-primary mx-auto mb-4" />
-            <p className="font-sans text-slate-400 max-w-xl mx-auto text-sm">Our dedicated team of hospitality professionals is the heart of Alka The Lake Side Hotel.</p>
+            <p className="font-sans text-slate-400 max-w-xl mx-auto text-sm">Our dedicated team of hospitality professionals is the heart of Alka The Lake View Hotel.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((m, i) => (

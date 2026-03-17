@@ -5,7 +5,7 @@ export const galleryImages = [
     thumb: '/images/hotel_facade_day.jpg',
     category: 'hotel',
     title: 'Hotel Exterior',
-    description: 'The iconic facade of Alka The Lake Side Hotel nestled along Naini Lake.',
+    description: 'The iconic facade of Alka The Lake View Hotel nestled along Naini Lake.',
   },
   {
     id: 2,
