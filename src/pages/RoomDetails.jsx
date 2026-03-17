@@ -109,7 +109,7 @@ export default function RoomDetails() {
                   <span className="material-symbols-outlined text-sm">chat</span>
                   Book This Room
                 </button>
-                <a href="tel:+917496036859"
+                <a href="tel:+917082676889"
                   className="flex-1 border border-primary text-primary font-sans font-bold py-3.5 rounded-lg uppercase tracking-wide text-sm hover:bg-primary hover:text-dark transition-all flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-sm">call</span>
                   Call to Book
