@@ -39,8 +39,8 @@ export default function Facilities() {
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <span className="text-primary font-sans text-sm font-medium tracking-[0.2em] uppercase mb-4 block">Dining Experience</span>
-                <h3 className="font-display text-3xl text-slate-100 font-bold mb-4">Our Multi-Cuisine Restaurant</h3>
-                <p className="font-sans text-slate-400 text-sm leading-relaxed mb-4">Indulge in the finest flavors — from authentic Kumaoni delicacies like Bhatt ki Churkani to continental favourites. Our culinary team ensures every meal is a memorable experience.</p>
+                <h3 className="font-display text-3xl text-slate-100 font-bold mb-4">Dining at Woods & Alka Bistro</h3>
+                <p className="font-sans text-slate-400 text-sm leading-relaxed mb-4">Savor a world of flavors at "Woods," our multi-cuisine restaurant, or grab a delicious quick bite at "Alka Bistro." From traditional Kumaoni delicacies like Bhatt ki Churkani to contemporary favorites, we offer the best dining experience near Naini Lake.</p>
                 <p className="font-sans text-slate-500 text-xs mb-6">Open 7 AM – 10 PM daily · Breakfast included with stay</p>
                 <Link to="/booking" className="self-start flex items-center gap-2 bg-primary text-dark px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
                   <span className="material-symbols-outlined text-sm">restaurant</span> Reserve a Table

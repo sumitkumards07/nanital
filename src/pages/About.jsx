@@ -45,11 +45,11 @@ export default function About() {
               Over a Decade of<br/><span className="text-primary">Mountain Hospitality</span>
             </h2>
             <div className="w-16 h-px bg-primary mb-6" />
-            <p className="font-sans text-slate-400 leading-relaxed mb-4">
-              Alka The Lake Side Hotel was founded with a singular vision — to create a haven where the natural grandeur of the Himalayas becomes an integral part of every guest's experience. Over the years, we have grown from a small guesthouse to a 48-room boutique hotel combining royal luxury with the raw, untouched beauty of the Kumaon hills.
+            <p className="font-sans text-slate-400 leading-relaxed mb-6">
+              Alka The Lake Side Hotel is a premier destination located directly on Mall Road in Nainital, offering pristine views of Naini Lake. Established with a passion for mountain hospitality, we are situated just a short walk from the sacred Goddess Naina Devi Temple.
             </p>
-            <p className="font-sans text-slate-400 leading-relaxed mb-8">
-              Every brick of this hotel carries the warmth of our region's culture, and every smile from our staff reflects the genuine care we have for each guest who walks through our doors.
+            <p className="font-sans text-slate-400 leading-relaxed mb-6">
+              Our hotel features a range of accommodations, from comfortable Economy rooms to our signature Royal Mughal-style suites, each designed to provide a royal retreat. Whether you're here for a honeymoon or a family getaway in our spacious apartments, our legacy of genuine care ensures an unforgettable Himalayan escape.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               {[{ v:'48', l:'Luxury Rooms' },{ v:'2000+', l:'Guests Per Year' },{ v:'10+', l:'Years Experience' },{ v:'4.9★', l:'Average Rating' }].map(s => (

@@ -102,7 +102,7 @@ export default function Home() {
             <SectionLabel>Accommodations</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-slate-100 mb-4">Our Rooms &amp; Suites</h2>
             <Divider />
-            <p className="font-sans text-slate-400 max-w-xl mx-auto mt-4">48 carefully curated rooms — from cozy retreats to lavish suites, every space is a sanctuary.</p>
+            <p className="font-sans text-slate-400 max-w-xl mx-auto mt-4">From our cozy Economy retreats to the lavish Royal Mughal-style suites, discover the finest lake view accommodation in Nainital.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {rooms.map((room, i) => <RoomCard key={room.id} room={room} index={i} />)}
@@ -152,11 +152,11 @@ export default function Home() {
               A Royal Retreat in<br/>the Heart of Nature
             </h2>
             <Divider />
-            <p className="font-sans text-slate-400 leading-relaxed mb-4">
-              Nestled amidst the pristine beauty of the Kumaon Himalayas, Alka The Lake Side Hotel was founded with a singular vision — to create a haven where nature's grandeur becomes part of every guest's story.
+            <p className="font-sans text-slate-400 leading-relaxed mb-6">
+              Alka The Lake Side Hotel is a premier destination located directly on Mall Road in Nainital, offering pristine views of Naini Lake. Established with a passion for mountain hospitality, we provide a royal retreat for families and honeymooners alike.
             </p>
             <p className="font-sans text-slate-400 leading-relaxed mb-8">
-              Every room is thoughtfully designed to frame unobstructed views of the shimmering Naini Lake and the rolling hills — a view that stays with you long after you leave.
+              Our accommodations range from comfortable Economy rooms to lavish Royal Mughal-style suites, each thoughtfully designed to frame unobstructed views of the shimmering Naini Lake and the rolling Himalayan hills.
             </p>
             <div className="grid grid-cols-2 gap-3 mb-8">
               {['Lake & Mountain Views','Free WiFi & Parking','Multi-Cuisine Restaurant','24/7 Room Service','Travel Desk','Power Backup'].map((item) => (

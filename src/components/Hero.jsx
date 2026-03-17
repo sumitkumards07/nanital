@@ -51,11 +51,20 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display text-5xl md:text-7xl font-bold text-slate-100 mb-6 leading-tight"
+          className="font-display text-5xl md:text-7xl font-bold text-slate-100 mb-4 leading-tight"
         >
-          Where the Mountains<br />
-          <span className="shimmer-text">Meet Royalty</span>
+          Experience the Majesty<br />
+          <span className="shimmer-text">of Naini Lake</span>
         </motion.h1>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="font-sans text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed"
+        >
+          The Premier Lake View Hotel in Nainital Mall Road – Where Royal Luxury Meets the Mountains.
+        </motion.h2>
 
 
         {/* Stats */}
