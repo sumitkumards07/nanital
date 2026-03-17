@@ -26,10 +26,6 @@ export default function RoomCard({ room, index = 0 }) {
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
-        {/* Price badge */}
-        <div className="absolute top-4 right-4 bg-dark/80 backdrop-blur-sm px-3 py-1 rounded text-primary text-xs font-sans font-bold uppercase">
-          {room.priceLabel}
-        </div>
         {/* Best Value badge */}
         {room.badge && room.badge !== 'Most Popular' && (
           <div className="absolute top-4 left-4 bg-primary text-dark px-3 py-1 rounded text-xs font-sans font-bold uppercase">

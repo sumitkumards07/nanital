@@ -99,11 +99,6 @@ export default function RoomDetails() {
                 ))}
               </div>
 
-              {/* Price */}
-              <div className="flex items-baseline gap-2 mb-5">
-                <span className="font-display text-4xl text-primary font-bold">{room.priceLabel}</span>
-                <span className="font-sans text-slate-500 text-sm">per night · incl. breakfast</span>
-              </div>
 
               <p className="font-sans text-slate-400 text-sm leading-relaxed mb-6">{room.longDescription}</p>
 
@@ -159,7 +154,6 @@ export default function RoomDetails() {
                   <div className="flex-1 min-w-0">
                     <p className="text-primary text-xs font-sans font-bold uppercase tracking-wider">{r.category}</p>
                     <h4 className="font-display text-lg text-slate-100 group-hover:text-primary transition-colors">{r.name}</h4>
-                    <p className="font-sans text-slate-500 text-sm">{r.priceLabel}</p>
                   </div>
                   <span className="material-symbols-outlined text-slate-500 group-hover:text-primary flex-shrink-0 transition-colors">chevron_right</span>
                 </Link>

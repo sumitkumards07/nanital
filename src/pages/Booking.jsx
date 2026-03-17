@@ -57,23 +57,6 @@ export default function Booking() {
               ))}
             </div>
 
-            {/* Prices */}
-            <div className="bg-dark/40 border border-primary/10 rounded-xl p-6">
-              <h4 className="text-xs font-sans font-bold uppercase text-primary tracking-wider mb-4">Room Prices</h4>
-              <div className="space-y-3">
-                {[{n:'Standard Room',p:'₹1,500',d:'AC · WiFi · Hot Water'},{n:'Deluxe Mountain View',p:'₹2,000',d:'AC · Balcony · Lake View'},{n:'Family Suite',p:'₹2,500',d:'AC · Seating Area · Panoramic'}].map(r => (
-                  <div key={r.n} className="flex justify-between items-start py-3 border-b border-primary/10 last:border-0">
-                    <div>
-                      <p className="font-sans text-sm font-medium text-slate-200">{r.n}</p>
-                      <p className="font-sans text-xs text-slate-500">{r.d}</p>
-                    </div>
-                    <span className="font-display font-bold text-primary text-base">{r.p}<span className="font-sans text-slate-500 font-normal text-xs">/night</span></span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-slate-600 text-xs font-sans mt-3">* Breakfast included · Free cancellation 24h+</p>
-            </div>
-
             {/* Concierge */}
             <div className="bg-dark border border-primary/20 rounded-xl p-6">
               <h3 className="font-display text-lg text-slate-100 font-bold mb-3">Concierge Desk</h3>

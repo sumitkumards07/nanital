@@ -257,7 +257,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-display text-4xl font-bold text-slate-100 mb-4">Ready for Your Mountain Escape?</h2>
-            <p className="font-sans text-slate-400 text-base mb-8">Book your stay at Alka The Lake Side Hotel. Starting from just ₹1,500 per night.</p>
+            <p className="font-sans text-slate-400 text-base mb-8">Book your stay at Alka The Lake Side Hotel. Experience royalty in the heart of Nainital.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/booking" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
                 <span className="material-symbols-outlined text-sm">calendar_month</span> Book Now
