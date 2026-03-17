@@ -1,23 +1,33 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { Suspense, lazy, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ContactButtons from './components/ContactButtons'
 
-import Home from './pages/Home'
-import About from './pages/About'
-import Rooms from './pages/Rooms'
-import RoomDetails from './pages/RoomDetails'
-import Gallery from './pages/Gallery'
-import Booking from './pages/Booking'
-import Facilities from './pages/Facilities'
-import ThingsToDo from './pages/ThingsToDo'
-import Attractions from './pages/Attractions'
-import Testimonials from './pages/Testimonials'
-import Contact from './pages/Contact'
-import FAQ from './pages/FAQ'
-import Policies from './pages/Policies'
+// Lazy load pages for better performance
+const Home = lazy(() => import('./pages/Home'))
+const About = lazy(() => import('./pages/About'))
+const Rooms = lazy(() => import('./pages/Rooms'))
+const RoomDetails = lazy(() => import('./pages/RoomDetails'))
+const Gallery = lazy(() => import('./pages/Gallery'))
+const Booking = lazy(() => import('./pages/Booking'))
+const Facilities = lazy(() => import('./pages/Facilities'))
+const ThingsToDo = lazy(() => import('./pages/ThingsToDo'))
+const Attractions = lazy(() => import('./pages/Attractions'))
+const Testimonials = lazy(() => import('./pages/Testimonials'))
+const Contact = lazy(() => import('./pages/Contact'))
+const FAQ = lazy(() => import('./pages/FAQ'))
+const Policies = lazy(() => import('./pages/Policies'))
+
+// Simple loading fallback
+function PageLoader() {
+  return (
+    <div className="min-h-screen bg-dark flex items-center justify-center">
+      <div className="w-12 h-12 border-4 border-primary/20 border-t-primary rounded-full animate-spin" />
+    </div>
+  )
+}
 
 const pageVariants = {
   initial: { opacity: 0, y: 16 },
@@ -38,32 +48,34 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
-        key={location.pathname}
-        variants={pageVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition={{ duration: 0.35, ease: 'easeInOut' }}
-      >
-        <Routes location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/rooms" element={<Rooms />} />
-          <Route path="/rooms/:slug" element={<RoomDetails />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/booking" element={<Booking />} />
-          <Route path="/facilities" element={<Facilities />} />
-          <Route path="/things-to-do" element={<ThingsToDo />} />
-          <Route path="/attractions" element={<Attractions />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/policies" element={<Policies />} />
-          {/* 404 Fallback */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </motion.div>
+      <Suspense fallback={<PageLoader />}>
+        <motion.div
+          key={location.pathname}
+          variants={pageVariants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.35, ease: 'easeInOut' }}
+        >
+          <Routes location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/rooms" element={<Rooms />} />
+            <Route path="/rooms/:slug" element={<RoomDetails />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/things-to-do" element={<ThingsToDo />} />
+            <Route path="/attractions" element={<Attractions />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/policies" element={<Policies />} />
+            {/* 404 Fallback */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </motion.div>
+      </Suspense>
     </AnimatePresence>
   )
 }

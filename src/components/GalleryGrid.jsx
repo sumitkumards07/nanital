@@ -29,6 +29,7 @@ export default function GalleryGrid({ images }) {
               alt={img.title}
               className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/55 transition-all duration-300 flex items-center justify-center">
               <span className="material-symbols-outlined text-white text-4xl opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg">zoom_in</span>
@@ -67,7 +68,7 @@ export default function GalleryGrid({ images }) {
               className="max-w-5xl w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <img src={lightbox.src} alt={lightbox.title} className="w-full max-h-[75vh] object-contain rounded-xl" />
+              <img src={lightbox.src} alt={lightbox.title} className="w-full max-h-[75vh] object-contain rounded-xl" decoding="async" />
               <p className="text-center text-slate-100 font-display text-lg mt-4">{lightbox.title}</p>
               <p className="text-center text-slate-400 font-sans text-sm mt-1">{lightbox.description}</p>
             </motion.div>

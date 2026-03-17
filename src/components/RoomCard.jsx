@@ -24,6 +24,7 @@ export default function RoomCard({ room, index = 0 }) {
           alt={room.name}
           className="w-full h-full object-cover"
           loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
         {/* Price badge */}

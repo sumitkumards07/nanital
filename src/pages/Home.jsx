@@ -128,14 +128,14 @@ export default function Home() {
             className="lg:w-1/2 relative"
           >
             <div className="img-zoom rounded-xl shadow-royal overflow-hidden aspect-[4/5]">
-              <img src="/images/hotel_facade_day.jpg" alt="Hotel Facade" className="w-full h-full object-cover" />
+              <img src="/images/hotel_facade_day.jpg" alt="Hotel Facade" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block">
               <p className="text-dark font-display text-4xl font-bold">10+</p>
               <p className="text-dark text-xs font-sans uppercase tracking-widest font-bold mt-1">Years of<br/>Excellence</p>
             </div>
             <div className="absolute -top-5 -left-5 w-36 h-36 rounded-xl overflow-hidden shadow-royal border-2 border-primary/30 hidden md:block img-zoom">
-              <img src="/images/hotel_courtyard.jpg" alt="Hotel Courtyard" className="w-full h-full object-cover" />
+              <img src="/images/hotel_courtyard.jpg" alt="Hotel Courtyard" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </motion.div>
 
@@ -177,7 +177,7 @@ export default function Home() {
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark/75 z-10" />
-          <img src="/images/hotel_facade_wide.jpg" alt="Hotel Panorama" className="w-full h-full object-cover" />
+          <img src="/images/hotel_facade_wide.jpg" alt="Hotel Panorama" className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -223,7 +223,7 @@ export default function Home() {
               <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }}
                 className={`img-zoom rounded-xl overflow-hidden border border-primary/10 ${span}`}
               >
-                <img src={src} alt={`Gallery ${i+1}`} className={`w-full ${h} object-cover`} loading="lazy" />
+                <img src={src} alt={`Gallery ${i+1}`} className={`w-full ${h} object-cover`} loading="lazy" decoding="async" />
               </motion.div>
             ))}
           </div>
