@@ -228,10 +228,10 @@ export default function BookingForm({ defaultRoom = '' }) {
         </label>
         {errors.agreed && <p className="text-red-400 text-[10px] mt-1 font-sans font-bold uppercase tracking-wider">{errors.agreed}</p>}
 
-        <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-2">
-          <p className="font-sans text-slate-400 text-xs leading-relaxed">
-            <span className="text-primary font-bold">📱 Independent Agency Notice:</span> Clicking <em>Send Enquiry</em> will open WhatsApp. 
-            We are an independent travel agency/authorized booking partner. A service fee is included in the totals. 
+        <div className="bg-primary/20 border-2 border-primary/40 rounded-lg p-5 mb-2 shadow-inner">
+          <p className="font-sans text-slate-100 text-xs leading-relaxed font-medium">
+            <span className="text-primary font-bold uppercase tracking-wider block mb-1">⚠️ Mandatory Disclosure</span>
+            We are an **independent travel agency/authorized booking partner** and are not the official website of Alka The Lake View Hotel. A concierge service fee is included in our assisted booking totals. 
             <Link to="/disclaimer" target="_blank" className="ml-1 text-primary hover:underline font-bold">View Full Disclaimer</Link>
           </p>
         </div>

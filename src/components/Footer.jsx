@@ -60,9 +60,12 @@ export default function Footer() {
             Experience the perfect blend of nature and luxury at Nainital's premier hotel.
             Your comfort is our priority, always.
           </p>
-          <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-6">
-            <p className="font-sans text-slate-500 text-[10px] leading-relaxed uppercase tracking-wider mb-1 font-bold">Independent Agency Disclaimer</p>
-            <p className="font-sans text-slate-400 text-xs leading-relaxed italic">
+          <div className="bg-primary/10 border border-primary/40 rounded-lg p-5 mb-6 shadow-sm">
+            <p className="font-sans text-primary text-[11px] leading-relaxed uppercase tracking-widest mb-2 font-bold flex items-center gap-1.5">
+              <span className="material-symbols-outlined text-xs">info</span>
+              Mandatory Legal Disclosure
+            </p>
+            <p className="font-sans text-slate-300 text-xs leading-relaxed font-medium">
               "Disclaimer: We are an independent travel agency/authorized booking partner and are not the official website of Alka The Lake View Hotel."
             </p>
           </div>
@@ -71,7 +74,7 @@ export default function Footer() {
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
               { icon: 'call',         href: 'tel:+917082676889',             label: 'Call' },
               { icon: 'chat',         href: 'https://wa.me/917082676889',    label: 'WhatsApp' },
-              { icon: 'mail',         href: 'mailto:sharmakamal2192@gmail.com', label: 'Email' },
+              { icon: 'mail',         href: 'mailto:support@nainitallakeviewhotel.com', label: 'Email' },
             ].map((s) => (
               <a
                 key={s.label}
