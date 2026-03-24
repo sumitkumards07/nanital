@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { thingsToDo } from '../data/thingsToDo'
 
 export default function ThingsToDo() {
-  useEffect(() => { document.title = 'Things To Do in Nainital – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Things To Do | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">

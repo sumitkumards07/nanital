@@ -52,8 +52,9 @@ export default function Footer() {
             <span className="material-symbols-outlined text-primary text-2xl">landscape</span>
             <div>
               <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase">Alka The Lake View</p>
-              <p className="text-primary/50 text-xs font-sans mt-0.5">Hotel</p>
+              <p className="text-primary/50 text-[10px] font-sans font-bold uppercase tracking-wider mt-1">Authorized Booking Partner</p>
             </div>
+
           </div>
           <p className="font-sans text-slate-400 text-sm leading-relaxed mb-4">
             Experience the perfect blend of nature and luxury at Nainital's premier hotel.
@@ -61,8 +62,8 @@ export default function Footer() {
           </p>
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-6">
             <p className="font-sans text-slate-500 text-[10px] leading-relaxed uppercase tracking-wider mb-1 font-bold">Independent Agency Disclaimer</p>
-            <p className="font-sans text-slate-400 text-xs leading-relaxed">
-              This website is operated by an <strong>independent travel agency</strong> and concierge service provider. We facilitate bookings for Alka The Lake View Hotel. We are not the official website of the property.
+            <p className="font-sans text-slate-400 text-xs leading-relaxed italic">
+              "Disclaimer: We are an independent travel agency/authorized booking partner and are not the official website of Alka The Lake View Hotel."
             </p>
           </div>
           <div className="flex gap-3">
@@ -126,8 +127,8 @@ export default function Footer() {
           <div className="space-y-4">
             {[
               { icon: 'call',        label: 'Phone',   value: '+91 7082676889',             href: 'tel:+917082676889' },
-              { icon: 'mail',        label: 'Email',   value: 'sharmakamal2192@gmail.com', href: 'mailto:sharmakamal2192@gmail.com' },
-              { icon: 'location_on', label: 'Address', value: 'Alka The Lake View Hotel, The Mall,\nNainital, Uttarakhand 263001', href: null },
+              { icon: 'mail',        label: 'Email',   value: 'support@nainitallakeviewhotel.com', href: 'mailto:support@nainitallakeviewhotel.com' },
+              { icon: 'location_on', label: 'Agency Address', value: 'First Floor, Sharma Complex,\nThe Mall, Nainital, UK 263001', href: null },
             ].map((c) => (
               <div key={c.label} className="flex items-start gap-3">
                 <div className="w-8 h-8 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">

@@ -31,7 +31,7 @@ function Banner({ label, title }) {
 }
 
 export default function About() {
-  useEffect(() => { document.title = 'About Us – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'About Us | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <Banner label="Our Story" title="About Alka The Lake View Hotel" />

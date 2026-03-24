@@ -228,14 +228,15 @@ export default function BookingForm({ defaultRoom = '' }) {
         </label>
         {errors.agreed && <p className="text-red-400 text-[10px] mt-1 font-sans font-bold uppercase tracking-wider">{errors.agreed}</p>}
 
-        <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-2">
           <p className="font-sans text-slate-400 text-xs leading-relaxed">
             <span className="text-primary font-bold">📱 Independent Agency Notice:</span> Clicking <em>Send Enquiry</em> will open WhatsApp. 
-            We are a private concierge agency; a service fee is included in the totals over the official tariff. 
+            We are an independent travel agency/authorized booking partner. A service fee is included in the totals. 
             <Link to="/disclaimer" target="_blank" className="ml-1 text-primary hover:underline font-bold">View Full Disclaimer</Link>
           </p>
         </div>
       </div>
+
 
       <motion.button
         type="submit"

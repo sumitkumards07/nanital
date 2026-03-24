@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function TermsAndConditions() {
   useEffect(() => { 
-    document.title = 'Terms & Conditions – Alka The Lake View Hotel';
+    document.title = 'Terms & Conditions | Authorized Partner - Alka The Lake View Hotel';
     window.scrollTo(0,0) 
   }, [])
 

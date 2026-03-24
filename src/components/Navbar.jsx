@@ -60,10 +60,11 @@ export default function Navbar() {
             <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase tracking-tight">
               Alka The Lake View Hotel
             </p>
-            <p className="text-primary/60 text-xs font-sans tracking-widest mt-0.5">
-              Your comfort, our priority
+            <p className="text-primary/60 text-[9px] font-sans font-bold uppercase tracking-[0.1em] mt-1 border border-primary/20 px-1.5 py-0.5 rounded inline-block">
+              Authorized Booking Partner
             </p>
           </div>
+
         </Link>
 
         {/* Desktop nav */}

@@ -5,7 +5,7 @@ import { galleryImages, galleryCategories } from '../data/gallery'
 
 export default function Gallery() {
   const [active, setActive] = useState('all')
-  useEffect(() => { document.title = 'Gallery – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Gallery | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   const filtered = active === 'all' ? galleryImages : galleryImages.filter(i => i.category === active)
 
   return (

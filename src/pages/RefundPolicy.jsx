@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function RefundPolicy() {
   useEffect(() => { 
-    document.title = 'Refund & Cancellation Policy – Alka The Lake View Hotel';
+    document.title = 'Refund & Cancellation Policy | Authorized Partner - Alka The Lake View Hotel';
     window.scrollTo(0,0) 
   }, [])
 

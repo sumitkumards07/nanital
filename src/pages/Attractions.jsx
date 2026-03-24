@@ -5,7 +5,7 @@ import AttractionCard from '../components/AttractionCard'
 import { attractions } from '../data/attractions'
 
 export default function Attractions() {
-  useEffect(() => { document.title = 'Nearby Attractions – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Nearby Attractions | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">

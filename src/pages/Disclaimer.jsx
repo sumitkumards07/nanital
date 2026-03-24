@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function Disclaimer() {
   useEffect(() => { 
-    document.title = 'Disclaimer – Alka The Lake View Hotel';
+    document.title = 'Disclaimer | Authorized Partner - Alka The Lake View Hotel';
     window.scrollTo(0,0) 
   }, [])
 

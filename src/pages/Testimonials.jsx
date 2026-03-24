@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { testimonials } from '../data/testimonials'
 
 export default function Testimonials() {
-  useEffect(() => { document.title = 'Guest Reviews – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Guest Reviews | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function PrivacyPolicy() {
   useEffect(() => { 
-    document.title = 'Privacy Policy – Alka The Lake View Hotel';
+    document.title = 'Privacy Policy | Authorized Partner - Alka The Lake View Hotel';
     window.scrollTo(0,0) 
   }, [])
 
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
           <p>We implement industry-standard security measures to protect your data from unauthorized access, alteration, or disclosure. However, please note that no method of transmission over the internet or mobile network is 100% secure.</p>
 
           <h2 className="text-xl font-display font-bold text-slate-100 mt-10 mb-4 uppercase tracking-wide border-b border-primary/20 pb-2">6. Contact Us</h2>
-          <p>If you have any questions about our Privacy Policy or want to request the deletion of your data, please contact us at <a href="mailto:sharmakamal2192@gmail.com" className="text-primary">sharmakamal2192@gmail.com</a>.</p>
+          <p>If you have any questions about our Privacy Policy or want to request the deletion of your data, please contact us at <a href="mailto:support@nainitallakeviewhotel.com" className="text-primary">support@nainitallakeviewhotel.com</a>.</p>
         </div>
       </section>
     </div>

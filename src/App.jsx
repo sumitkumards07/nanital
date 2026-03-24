@@ -91,7 +91,7 @@ function AnimatedRoutes() {
 
 function NotFound() {
   useEffect(() => {
-    document.title = '404 – Page Not Found | Alka The Lake View Hotel'
+    document.title = '404 – Page Not Found | Authorized Partner - Alka The Lake View Hotel'
   }, [])
 
   return (
