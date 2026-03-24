@@ -20,6 +20,10 @@ const Testimonials = lazy(() => import('./pages/Testimonials'))
 const Contact = lazy(() => import('./pages/Contact'))
 const FAQ = lazy(() => import('./pages/FAQ'))
 const Policies = lazy(() => import('./pages/Policies'))
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'))
+const RefundPolicy = lazy(() => import('./pages/RefundPolicy'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
+const Disclaimer = lazy(() => import('./pages/Disclaimer'))
 
 // Simple loading fallback
 function PageLoader() {
@@ -72,6 +76,10 @@ function AnimatedRoutes() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/policies" element={<Policies />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
             {/* 404 Fallback */}
             <Route path="*" element={<NotFound />} />
           </Routes>

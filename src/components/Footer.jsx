@@ -15,7 +15,11 @@ const infoLinks = [
   { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact Us',   to: '/contact' },
   { label: 'FAQ',          to: '/faq' },
-  { label: 'Policies',     to: '/policies' },
+  { label: 'Terms & Conditions', to: '/terms-and-conditions' },
+  { label: 'Refund Policy',     to: '/refund-policy' },
+  { label: 'Privacy Policy',    to: '/privacy-policy' },
+  { label: 'Disclaimer',        to: '/disclaimer' },
+  { label: 'Hotel Policies',     to: '/policies' },
 ]
 
 export default function Footer() {
@@ -51,10 +55,16 @@ export default function Footer() {
               <p className="text-primary/50 text-xs font-sans mt-0.5">Hotel</p>
             </div>
           </div>
-          <p className="font-sans text-slate-400 text-sm leading-relaxed mb-6">
+          <p className="font-sans text-slate-400 text-sm leading-relaxed mb-4">
             Experience the perfect blend of nature and luxury at Nainital's premier hotel.
             Your comfort is our priority, always.
           </p>
+          <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-6">
+            <p className="font-sans text-slate-500 text-[10px] leading-relaxed uppercase tracking-wider mb-1 font-bold">Independent Agency Disclaimer</p>
+            <p className="font-sans text-slate-400 text-xs leading-relaxed">
+              This website is operated by an <strong>independent travel agency</strong> and concierge service provider. We facilitate bookings for Alka The Lake View Hotel. We are not the official website of the property.
+            </p>
+          </div>
           <div className="flex gap-3">
             {[
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
@@ -146,8 +156,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Alka The Lake View Hotel. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link to="/policies" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Privacy &amp; Policies</Link>
-            <Link to="/faq"      className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">FAQ</Link>
+            <Link to="/disclaimer" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Disclaimer</Link>
+            <Link to="/privacy-policy" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Privacy</Link>
+            <Link to="/terms-and-conditions" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Terms</Link>
           </div>
         </div>
       </div>

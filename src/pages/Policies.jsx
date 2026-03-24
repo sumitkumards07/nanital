@@ -10,6 +10,14 @@ const policies = [
   { icon:'warning',       title:'Damage & Liability',   items:['Guests liable for any damage to hotel property','Damage assessed and charged accordingly','Theft or vandalism reported to appropriate authorities','Hotel not responsible for accidents due to guest negligence','Personal electrical appliances from outside are not permitted'] },
 ]
 
+const legalLinks = [
+  { label: 'Terms & Conditions', to: '/terms-and-conditions', icon: 'gavel' },
+  { label: 'Refund Policy', to: '/refund-policy', icon: 'payments' },
+  { label: 'Privacy Policy', to: '/privacy-policy', icon: 'security' },
+  { label: 'Disclaimer', to: '/disclaimer', icon: 'info' },
+]
+
+
 export default function Policies() {
   useEffect(() => { document.title = 'Hotel Policies – Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
@@ -35,7 +43,23 @@ export default function Policies() {
             </div>
           </motion.div>
 
+          {/* Detailed Legal Links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+            {legalLinks.map((link, i) => (
+              <motion.div key={link.to} initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{delay: i*0.1}}>
+                <a href={link.to} className="flex items-center justify-between bg-primary/5 border border-primary/20 p-4 rounded-xl hover:bg-primary/10 transition-colors group">
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-primary">{link.icon}</span>
+                    <span className="font-display font-bold text-slate-100 text-sm tracking-wide uppercase">{link.label}</span>
+                  </div>
+                  <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">arrow_forward</span>
+                </a>
+              </motion.div>
+            ))}
+          </div>
+
           <div className="space-y-5">
+
             {policies.map((p, i) => (
               <motion.div key={p.title} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*0.07}}
                 className="bg-dark/40 border border-primary/10 rounded-xl overflow-hidden hover:border-primary/30 transition-colors">

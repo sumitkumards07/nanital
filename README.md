@@ -1,4 +1,4 @@
-# 🏔️ Alka The Lake Side Hotel
+# 🏔️ Alka The Lake View Hotel
 
 > **Your comfort, our priority** — A luxury hotel website for Nainital, Uttarakhand.
 
@@ -128,7 +128,7 @@ nainital-lake-view-hotel/
 1. User fills the booking form (check-in, check-out, room type, name, phone, email)
 2. Clicks **"Book Now via WhatsApp"**
 3. App generates a pre-filled WhatsApp message
-4. Opens `https://wa.me/8252561063?text=...`
+4. Opens `https://wa.me/917082676889?text=...`
 5. Guest sends the message; hotel confirms within 30 minutes
 
 ---
@@ -153,10 +153,10 @@ npm run build
 
 ## 📞 Hotel Contact
 
-- **Phone:** +91 8252561063
-- **Email:** pushkar.sarraf44@gmail.com
-- **Address:** VIT Nainital, 522237, Uttarakhand, India
-- **WhatsApp:** [wa.me/8252561063](https://wa.me/8252561063)
+- **Phone:** +91 7082676889
+- **Email:** sharmakamal2192@gmail.com
+- **Address:** Alka The Lake View Hotel, The Mall, Nainital, Uttarakhand 263001
+- **WhatsApp:** [wa.me/917082676889](https://wa.me/917082676889)
 
 ---
 

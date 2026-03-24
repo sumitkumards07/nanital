@@ -36,8 +36,23 @@ export default function Hero() {
         ))}
       </div>
 
+      {/* Compliance Disclaimer Banner */}
+      <div className="absolute top-24 left-0 right-0 z-30 px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="max-w-max mx-auto bg-dark/40 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full shadow-royal"
+        >
+          <p className="font-sans text-[10px] md:text-xs text-slate-300 uppercase tracking-[0.15em] flex items-center gap-2">
+            <span className="material-symbols-outlined text-primary text-sm flex-shrink-0">info</span>
+            Independent Third-Party Agency · Dedicated Booking & Concierge Services
+          </p>
+        </motion.div>
+      </div>
+
       {/* Content */}
-      <motion.div style={{ opacity }} className="relative z-20 text-center px-4 max-w-4xl mx-auto">
+      <motion.div style={{ opacity }} className="relative z-20 text-center px-4 max-w-4xl mx-auto pt-10">
+
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

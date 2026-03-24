@@ -30,6 +30,7 @@ export default function BookingForm({ defaultRoom = '' }) {
     checkIn: '', checkOut: '',
     guests: '2', roomType: defaultRoom,
     message: '',
+    agreed: false
   })
   const [errors,    setErrors]    = useState({})
   const [submitted, setSubmitted] = useState(false)
@@ -44,14 +45,15 @@ export default function BookingForm({ defaultRoom = '' }) {
     if (!form.checkIn)      e.checkIn  = 'Check-in date required'
     if (!form.checkOut)     e.checkOut = 'Check-out date required'
     if (!form.roomType)     e.roomType = 'Please select a room type'
+    if (!form.agreed)       e.agreed   = 'You must agree to the terms to proceed'
     if (form.checkIn && form.checkOut && form.checkIn >= form.checkOut)
       e.checkOut = 'Check-out must be after check-in'
     return e
   }
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setForm(p => ({ ...p, [name]: value }))
+    const { name, value, type, checked } = e.target
+    setForm(p => ({ ...p, [name]: type === 'checkbox' ? checked : value }))
     if (errors[name]) setErrors(p => ({ ...p, [name]: '' }))
   }
 
@@ -210,13 +212,29 @@ export default function BookingForm({ defaultRoom = '' }) {
           className={`${inputCls('message')} resize-none`} />
       </div>
 
-      {/* Info */}
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-        <p className="font-sans text-slate-400 text-xs leading-relaxed">
-          <span className="text-primary font-bold">📱 WhatsApp Booking:</span> Clicking <em>Send Enquiry</em> will open WhatsApp
-          with your details pre-filled. Our team confirms within <strong className="text-slate-300">30 minutes</strong>.
-          No advance payment required — pay on arrival.
-        </p>
+      {/* Compliance Disclaimers */}
+      <div className="space-y-4">
+        <label className="flex items-start gap-3 cursor-pointer group">
+          <input 
+            type="checkbox" 
+            name="agreed" 
+            checked={form.agreed} 
+            onChange={handleChange}
+            className="mt-1 w-4 h-4 rounded border-primary/30 bg-dark/50 text-primary focus:ring-primary focus:ring-offset-dark"
+          />
+          <span className="font-sans text-xs text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors">
+            I agree to the <Link to="/terms-and-conditions" target="_blank" className="text-primary hover:underline">Terms & Conditions</Link>, <Link to="/privacy-policy" target="_blank" className="text-primary hover:underline">Privacy Policy</Link>, and <Link to="/refund-policy" target="_blank" className="text-primary hover:underline">Refund & Cancellation Policy</Link>. *
+          </span>
+        </label>
+        {errors.agreed && <p className="text-red-400 text-[10px] mt-1 font-sans font-bold uppercase tracking-wider">{errors.agreed}</p>}
+
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+          <p className="font-sans text-slate-400 text-xs leading-relaxed">
+            <span className="text-primary font-bold">📱 Independent Agency Notice:</span> Clicking <em>Send Enquiry</em> will open WhatsApp. 
+            We are a private concierge agency; a service fee is included in the totals over the official tariff. 
+            <Link to="/disclaimer" target="_blank" className="ml-1 text-primary hover:underline font-bold">View Full Disclaimer</Link>
+          </p>
+        </div>
       </div>
 
       <motion.button

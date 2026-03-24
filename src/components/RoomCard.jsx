@@ -39,6 +39,8 @@ export default function RoomCard({ room, index = 0 }) {
         <div className="flex justify-between items-start mb-2">
           <div>
             <p className="text-primary text-xs font-sans font-bold uppercase tracking-widest mb-1">{room.category}</p>
+            <p className="font-display text-primary font-bold text-lg">{room.priceLabel}</p>
+            <p className="text-[9px] text-slate-500 font-sans italic mt-0.5 leading-none">* Includes concierge & booking service fee</p>
             <h3 className="font-display text-xl text-slate-100 group-hover:text-primary transition-colors">{room.name}</h3>
           </div>
           <div className="flex gap-0.5 mt-1 flex-shrink-0">

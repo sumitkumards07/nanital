@@ -98,6 +98,13 @@ export default function RoomDetails() {
                   </span>
                 ))}
               </div>
+              
+              <div className="bg-primary/5 border border-primary/10 rounded-lg p-3 mb-6">
+                <p className="font-sans text-slate-500 text-[10px] uppercase tracking-wider mb-1 font-bold">Pricing Transparency</p>
+                <p className="font-sans text-slate-400 text-xs leading-relaxed italic">
+                  * Quoted price includes a dedicated concierge service fee for booking assistance and 24/7 support.
+                </p>
+              </div>
 
 
               <p className="font-sans text-slate-400 text-sm leading-relaxed mb-6">{room.longDescription}</p>

@@ -69,7 +69,7 @@ export default function Testimonials() {
             <h3 className="font-display text-3xl text-dark font-bold mb-3">Stayed With Us Recently?</h3>
             <p className="font-sans text-dark/70 text-sm mb-6 max-w-xl mx-auto">Share your feedback and help future guests make the right choice.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://wa.me/917082676889?text=I%20would%20like%20to%20share%20my%20feedback%20about%20Nainital%20Lake%20View%20Hotel."
+              <a href="https://wa.me/917082676889?text=I%20would%20like%20to%20share%20my%20feedback%20about%20Alka%20The%20Lake%20View%20Hotel."
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase hover:bg-dark/80 transition-all">
                 <span className="material-symbols-outlined text-sm">chat</span> Share on WhatsApp

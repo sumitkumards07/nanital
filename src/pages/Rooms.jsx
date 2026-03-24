@@ -29,6 +29,7 @@ export default function Rooms() {
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-6 text-dark font-sans font-bold text-sm">
           <span>✓ Check-in: 12:00 PM</span><span>✓ Check-out: 10:00 AM</span>
           <span>✓ Free WiFi in all rooms</span><span>✓ Instant WhatsApp confirmation</span>
+          <span className="text-[10px] opacity-80 bg-dark/20 px-2 py-0.5 rounded border border-dark/10 tracking-tight">Prices include concierge service fees over official tariff</span>
         </div>
       </div>
 
