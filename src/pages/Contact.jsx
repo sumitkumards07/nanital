@@ -18,7 +18,7 @@ export default function Contact() {
 
   const contactCards = [
     {icon:'call',        title:'Phone',    val:'+91 7082676889',               href:'tel:+917082676889',   sub:'Tap to call'},
-    {icon:'mail',        title:'Email',    val:'support@nainitallakeviewhotel.com',   href:'mailto:support@nainitallakeviewhotel.com', sub:'Send email'},
+    {icon:'mail',        title:'Email',    val:'support@alkahotel-partner.online',   href:'mailto:support@alkahotel-partner.online', sub:'Send email'},
     {icon:'location_on', title:'Agency Address',  val:'First Floor, Sharma Complex\nThe Mall, Nainital, UK 263001', href:null, sub:null},
     {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/917082676889', sub:'Open WhatsApp'},
   ]
@@ -122,7 +122,7 @@ export default function Contact() {
               <div className="bg-dark/40 border border-primary/10 rounded-xl p-6">
                 <h3 className="font-display text-xl text-slate-100 font-bold mb-4">Connect with Us</h3>
                 <div className="grid grid-cols-3 gap-3">
-                  {[{icon:'call',label:'Call',href:'tel:+917082676889',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/917082676889',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:support@nainitallakeviewhotel.com',bg:'bg-red-600'}].map(s => (
+                  {[{icon:'call',label:'Call',href:'tel:+917082676889',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/917082676889',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:support@alkahotel-partner.online',bg:'bg-red-600'}].map(s => (
                     <a key={s.label} href={s.href} target={s.href.startsWith('http')?'_blank':undefined} rel="noopener noreferrer"
                       className={`${s.bg} text-white rounded-xl p-3 flex flex-col items-center gap-1 hover:opacity-90 transition-opacity`}>
                       <span className="material-symbols-outlined text-xl">{s.icon}</span>

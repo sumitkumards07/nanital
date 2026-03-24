@@ -62,7 +62,7 @@ export default function Booking() {
               <h3 className="font-display text-lg text-slate-100 font-bold mb-3">Concierge Desk</h3>
               <p className="font-sans text-slate-400 text-sm mb-4">Available 24/7 for your personalized requirements.</p>
               <div className="space-y-3">
-                {[{icon:'call',label:'Call Us',val:'+91 7082676889',href:'tel:+917082676889'},{icon:'mail',label:'Email Us',val:'support@nainitallakeviewhotel.com',href:'mailto:support@nainitallakeviewhotel.com'}].map(c => (
+                {[{icon:'call',label:'Call Us',val:'+91 7082676889',href:'tel:+917082676889'},{icon:'mail',label:'Email Us',val:'support@alkahotel-partner.online',href:'mailto:support@alkahotel-partner.online'}].map(c => (
                   <a key={c.label} href={c.href} className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-primary/5 transition-colors group">
                     <span className="material-symbols-outlined text-primary text-lg">{c.icon}</span>
                     <div>

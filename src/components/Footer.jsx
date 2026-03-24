@@ -74,7 +74,7 @@ export default function Footer() {
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
               { icon: 'call',         href: 'tel:+917082676889',             label: 'Call' },
               { icon: 'chat',         href: 'https://wa.me/917082676889',    label: 'WhatsApp' },
-              { icon: 'mail',         href: 'mailto:support@nainitallakeviewhotel.com', label: 'Email' },
+              { icon: 'mail',         href: 'mailto:support@alkahotel-partner.online', label: 'Email' },
             ].map((s) => (
               <a
                 key={s.label}
@@ -130,7 +130,7 @@ export default function Footer() {
           <div className="space-y-4">
             {[
               { icon: 'call',        label: 'Phone',   value: '+91 7082676889',             href: 'tel:+917082676889' },
-              { icon: 'mail',        label: 'Email',   value: 'support@nainitallakeviewhotel.com', href: 'mailto:support@nainitallakeviewhotel.com' },
+              { icon: 'mail',        label: 'Email',   value: 'support@alkahotel-partner.online', href: 'mailto:support@alkahotel-partner.online' },
               { icon: 'location_on', label: 'Agency Address', value: 'First Floor, Sharma Complex,\nThe Mall, Nainital, UK 263001', href: null },
             ].map((c) => (
               <div key={c.label} className="flex items-start gap-3">
