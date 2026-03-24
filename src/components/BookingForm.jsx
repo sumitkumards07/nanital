@@ -61,10 +61,10 @@ export default function BookingForm({ defaultRoom = '' }) {
     e.preventDefault()
     const errs = validate()
     if (Object.keys(errs).length) { setErrors(errs); return }
+    
+    // Open WhatsApp synchronously to prevent mobile/Safari popup blockers
+    window.open(`https://wa.me/917082676889?text=${buildWhatsAppMsg(form)}`, '_blank')
     setSubmitted(true)
-    setTimeout(() => {
-      window.open(`https://wa.me/917082676889?text=${buildWhatsAppMsg(form)}`, '_blank')
-    }, 700)
   }
 
   const inputCls = (field) =>
