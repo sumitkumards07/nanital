@@ -61,7 +61,7 @@ export default function Navbar() {
               Alka The Lake View Hotel
             </p>
             <p className="text-primary/60 text-[9px] font-sans font-bold uppercase tracking-[0.1em] mt-1 border border-primary/20 px-1.5 py-0.5 rounded inline-block">
-              Authorized Booking Partner
+              
             </p>
           </div>
 

@@ -25,7 +25,7 @@ const stats = [
 
 export default function Home() {
   const [guests, setGuests] = useState(2)
-  useEffect(() => { document.title = 'Alka The Lake View Hotel | Authorized Booking Partner' }, [])
+  useEffect(() => { document.title = 'Alka The Lake View Hotel' }, [])
 
   return (
     <div className="overflow-hidden">

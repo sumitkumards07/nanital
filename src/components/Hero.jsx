@@ -45,7 +45,7 @@ export default function Hero() {
         >
           <p className="font-sans text-[10px] md:text-xs text-dark font-bold uppercase tracking-[0.1em] flex items-center gap-2">
             <span className="material-symbols-outlined text-dark text-sm flex-shrink-0" style={{fontVariationSettings:"'FILL' 1"}}>info</span>
-            Authorized Booking Partner · Independent Agency Not Official Hotel Website
+            
           </p>
         </motion.div>
       </div>

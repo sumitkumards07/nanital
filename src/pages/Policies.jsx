@@ -19,7 +19,7 @@ const legalLinks = [
 
 
 export default function Policies() {
-  useEffect(() => { document.title = 'Hotel Policies | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Hotel Policies | Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">

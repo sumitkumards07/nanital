@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function PrivacyPolicy() {
   useEffect(() => { 
-    document.title = 'Privacy Policy | Authorized Partner - Alka The Lake View Hotel';
+    document.title = 'Privacy Policy | Alka The Lake View Hotel';
     window.scrollTo(0,0) 
   }, [])
 

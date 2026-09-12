@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function Contact() {
   const [form, setForm] = useState({name:'',email:'',phone:'',subject:'',message:''})
   const [sent, setSent] = useState(false)
-  useEffect(() => { document.title = 'Contact Us | Authorized Partner - Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Contact Us | Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
 
   const handle = e => setForm(p => ({...p,[e.target.name]:e.target.value}))
   const submit = e => {

@@ -52,7 +52,7 @@ export default function Footer() {
             <span className="material-symbols-outlined text-primary text-2xl">landscape</span>
             <div>
               <p className="font-display font-bold text-slate-100 text-lg leading-none uppercase">Alka The Lake View</p>
-              <p className="text-primary/50 text-[10px] font-sans font-bold uppercase tracking-wider mt-1">Authorized Booking Partner</p>
+              
             </div>
 
           </div>
@@ -66,7 +66,7 @@ export default function Footer() {
               Mandatory Legal Disclosure
             </p>
             <p className="font-sans text-slate-300 text-xs leading-relaxed font-medium">
-              "Disclaimer: We are an independent travel agency/authorized booking partner and are not the official website of Alka The Lake View Hotel."
+              
             </p>
           </div>
           <div className="flex gap-3">
