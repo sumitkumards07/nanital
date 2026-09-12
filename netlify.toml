@@ -4,8 +4,9 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "https://www.alkalakehotel.co.in/:splat"
+  status = 301
+  force = true
 
 [build.environment]
   NODE_VERSION = "18"
