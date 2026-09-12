@@ -15,7 +15,7 @@ export default function TermsAndConditions() {
     </Helmet>
       <div className="page-hero py-20 bg-dark/50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high">
+          <img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" fetchpriority="high" />
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="font-display text-4xl md:text-5xl text-slate-100 font-bold">Terms & Conditions</h1>

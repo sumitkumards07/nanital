@@ -61,7 +61,7 @@ export default function FAQ() {
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_lobby_staircase.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high"></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_lobby_staircase.webp" alt="bg" className="w-full h-full object-cover" fetchpriority="high" /></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Help Centre</motion.p>

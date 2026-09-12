@@ -24,7 +24,7 @@ function Banner({ label, title }) {
       <meta name="description" content="Learn about our travel agency services. We provide independent, personalized booking assistance for Alka The Lake View Hotel in Nainital." />
     </Helmet>
       <div className="absolute inset-0 opacity-20">
-        <img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high">
+        <img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" fetchpriority="high" />
       </div>
       <div className="absolute inset-0 bg-dark/60" />
       <div className="relative z-10 text-center px-4">
@@ -75,14 +75,14 @@ export default function About() {
           </motion.div>
           <motion.div initial={{ opacity:0, x:40 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ duration:0.7 }} className="lg:w-1/2 space-y-4">
             <div className="img-zoom rounded-xl overflow-hidden shadow-royal h-72">
-              <img src="/images/hotel_facade_day.webp" alt="Hotel Exterior" className="w-full h-full object-cover" / fetchpriority="high">
+              <img src="/images/hotel_facade_day.webp" alt="Hotel Exterior" className="w-full h-full object-cover" fetchpriority="high" />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="img-zoom rounded-xl overflow-hidden shadow-soft h-44">
-                <img src="/images/hotel_exterior_terrace.webp" alt="Lake View" className="w-full h-full object-cover" / fetchpriority="high">
+                <img src="/images/hotel_exterior_terrace.webp" alt="Lake View" className="w-full h-full object-cover" fetchpriority="high" />
               </div>
               <div className="img-zoom rounded-xl overflow-hidden shadow-soft h-44">
-                <img src="/images/hotel_lobby_staircase.webp" alt="Hotel Lobby" className="w-full h-full object-cover" / fetchpriority="high">
+                <img src="/images/hotel_lobby_staircase.webp" alt="Hotel Lobby" className="w-full h-full object-cover" fetchpriority="high" />
               </div>
             </div>
           </motion.div>
