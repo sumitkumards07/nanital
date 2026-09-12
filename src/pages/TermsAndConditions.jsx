@@ -1,17 +1,21 @@
 import { useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 
 export default function TermsAndConditions() {
   useEffect(() => { 
-    document.title = 'Terms & Conditions | Alka The Lake View Hotel';
     window.scrollTo(0,0) 
   }, [])
 
   return (
     <div className="pt-20 min-h-screen bg-dark">
+    <Helmet>
+      <title>Terms & Conditions | Alka Hotel Booking Agency</title>
+      <meta name="description" content="Terms and conditions for using our independent concierge booking services for Alka The Lake View Hotel." />
+    </Helmet>
       <div className="page-hero py-20 bg-dark/50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="/images/hotel_facade_wide.jpg" alt="bg" className="w-full h-full object-cover" />
+          <img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" />
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="font-display text-4xl md:text-5xl text-slate-100 font-bold">Terms & Conditions</h1>

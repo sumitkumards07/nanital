@@ -155,9 +155,14 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-primary/10 py-6 px-6">
+        <div className="max-w-7xl mx-auto mb-4 p-4 bg-primary/5 rounded-lg border border-primary/20">
+          <p className="font-sans text-xs text-slate-400 text-center leading-relaxed">
+            <strong>Important:</strong> We are an independent travel and booking agency. We are not the official website of Alka The Lake View Hotel. We assist guests in securing reservations and providing concierge services.
+          </p>
+        </div>
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-sans text-slate-500 text-xs">
-            © {new Date().getFullYear()} Alka The Lake View Hotel. All rights reserved.
+            © {new Date().getFullYear()} Independent Booking Agency. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="/disclaimer" className="font-sans text-slate-500 text-xs hover:text-slate-300 transition-colors">Disclaimer</Link>

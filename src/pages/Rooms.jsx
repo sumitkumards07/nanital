@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import RoomCard from '../components/RoomCard'
@@ -8,13 +9,17 @@ const categories = ['All', 'Standard', 'Deluxe', 'Suite']
 
 export default function Rooms() {
   const [active, setActive] = useState('All')
-  useEffect(() => { document.title = 'Our Rooms | Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { window.scrollTo(0,0) }, [])
   const filtered = active === 'All' ? rooms : rooms.filter(r => r.category === active)
 
   return (
     <div className="pt-20">
+    <Helmet>
+      <title>Rooms & Suites | Alka Hotel Nainital Booking</title>
+      <meta name="description" content="Explore premium rooms with lake views at Alka Hotel Nainital. View tariffs, amenities, and book your stay securely through our agency." />
+    </Helmet>
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_exterior_terrace.jpg" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_exterior_terrace.webp" alt="bg" className="w-full h-full object-cover" /></div>
         <div className="absolute inset-0 bg-dark/60" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Accommodations</motion.p>

@@ -13,7 +13,7 @@ export const rooms = [
     view: 'Internal View',
     description: 'Our Standard Room offers essential comfort and modern amenities, making it the perfect choice for budget-conscious travelers.',
     longDescription: 'The Standard Room is designed to provide a cozy and functional stay. Featuring a comfortable double bed, clean linens, and necessary modern conveniences, it ensures a restful night after a day of exploring Nainital. Perfect for solo travelers or couples looking for great value.',
-    images: ['/images/room_interior_1.png', '/images/hotel_courtyard.jpg', '/images/room_interior_2.png'],
+    images: ['/images/room_interior_1.webp', '/images/hotel_courtyard.webp', '/images/room_interior_2.webp'],
     amenities: [
       { icon: 'Zap', label: 'AC' },
       { icon: 'Wifi', label: 'Free WiFi' },
@@ -38,7 +38,7 @@ export const rooms = [
     view: 'Lake & Mountain View',
     description: 'Enjoy stunning panoramas from our Deluxe Mountain View room, featuring a private balcony and premium features.',
     longDescription: 'Elevate your stay in our Deluxe Mountain View room. This room features a private balcony where you can soak in the fresh mountain air and enjoy unobstructed views of the hills and the lake. With a king-size bed and upgraded interiors, it offers a truly refreshing experience.',
-    images: ['/images/room_interior_2.png', '/images/hotel_exterior_terrace.jpg', '/images/hotel_facade_day.jpg'],
+    images: ['/images/room_interior_2.webp', '/images/hotel_exterior_terrace.webp', '/images/hotel_facade_day.webp'],
     amenities: [
       { icon: 'Zap', label: 'AC' },
       { icon: 'Sun', label: 'Private Balcony' },
@@ -64,7 +64,7 @@ export const rooms = [
     view: 'Panoramic Lake View',
     description: 'Our Family Suite provides ample space and premium comfort for families or groups traveling together.',
     longDescription: 'The Family Suite is our most spacious offering, featuring two large queen beds and a dedicated seating area. With large windows offering a panoramic view of Naini Lake and the surrounding town, it provides the perfect backdrop for family memories. Includes premium amenities and priority room service.',
-    images: ['/images/hotel_terrace_fountain.jpg', '/images/room_interior_1.png', '/images/hotel_facade_wide.jpg'],
+    images: ['/images/hotel_terrace_fountain.webp', '/images/room_interior_1.webp', '/images/hotel_facade_wide.webp'],
     amenities: [
       { icon: 'Zap', label: 'AC' },
       { icon: 'Sofa', label: 'Seating Area' },

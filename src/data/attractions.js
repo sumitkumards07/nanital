@@ -5,7 +5,7 @@ export const attractions = [
     distance: '0.5 km',
     duration: '2–3 hours',
     category: 'Nature',
-    image: '/images/hotel_exterior_terrace.jpg',
+    image: '/images/hotel_exterior_terrace.webp',
     description:
       'The iconic crescent-shaped Naini Lake is the heart of Nainital. Enjoy boating, lakeside strolls, and spectacular reflections of the surrounding hills in its crystal-clear waters.',
     highlights: ['Boating', 'Lakeside Walk', 'Photography', 'Boat House Club'],
@@ -18,7 +18,7 @@ export const attractions = [
     distance: '2.5 km',
     duration: '2–3 hours',
     category: 'Viewpoint',
-    image: '/images/hotel_facade_day.jpg',
+    image: '/images/hotel_facade_day.webp',
     description:
       'Accessible via ropeway or trekking, Snow View Point offers breathtaking panoramic views of the snow-capped Himalayan peaks including Nanda Devi. On clear days, you can see peaks from 300 km away.',
     highlights: ['Ropeway Ride', 'Himalayan Panorama', 'Binoculars', 'Souvenir Shops'],
@@ -31,7 +31,7 @@ export const attractions = [
     distance: '1.5 km',
     duration: '1–2 hours',
     category: 'Nature',
-    image: '/images/hotel_courtyard.jpg',
+    image: '/images/hotel_courtyard.webp',
     description:
       'A unique series of interconnected caves named after Himalayan animals. Perfect for children and families, these natural rocky caves feature a musical fountain and hanging garden.',
     highlights: ['Cave Exploration', 'Musical Fountain', 'Hanging Garden', 'Kids Activities'],
@@ -44,7 +44,7 @@ export const attractions = [
     distance: '1 km',
     duration: '1 hour',
     category: 'Spiritual',
-    image: '/images/hotel_facade_wide.jpg',
+    image: '/images/hotel_facade_wide.webp',
     description:
       'One of the 51 Shakti Peethas, this revered temple dedicated to Goddess Naina Devi sits on the northern shore of Naini Lake. A spiritual journey combined with stunning lakeside scenery.',
     highlights: ['Spiritual Experience', 'Lake Views', 'Local Culture', 'Ancient Architecture'],
@@ -57,7 +57,7 @@ export const attractions = [
     distance: '0.8 km',
     duration: '2–3 hours',
     category: 'Shopping',
-    image: '/images/hotel_lobby_staircase.jpg',
+    image: '/images/hotel_lobby_staircase.webp',
     description:
       'The vibrant lifeline of Nainital, Mall Road stretches along the lakeside offering a delightful mix of shops, restaurants, and street food. Browse local handicrafts, woollens, and famous Nainital candles.',
     highlights: ['Shopping', 'Street Food', 'Cafés', 'Lakeside Views'],

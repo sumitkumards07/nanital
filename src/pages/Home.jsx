@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
@@ -25,10 +26,14 @@ const stats = [
 
 export default function Home() {
   const [guests, setGuests] = useState(2)
-  useEffect(() => { document.title = 'Alka The Lake View Hotel' }, [])
+  useEffect(() => { }, [])
 
   return (
     <div className="overflow-hidden">
+    <Helmet>
+      <title>Alka The Lake View Hotel Booking | Nainital Mall Road</title>
+      <meta name="description" content="Book your stay at Alka The Lake View Hotel on Mall Road, Nainital. Enjoy panoramic Naini Lake views. Independent booking concierge service." />
+    </Helmet>
       <Hero />
 
       {/* Quick booking bar */}
@@ -128,14 +133,14 @@ export default function Home() {
             className="lg:w-1/2 relative"
           >
             <div className="img-zoom rounded-xl shadow-royal overflow-hidden aspect-[4/5]">
-              <img src="/images/hotel_facade_day.jpg" alt="Hotel Facade" className="w-full h-full object-cover" />
+              <img src="/images/hotel_facade_day.webp" alt="Hotel Facade" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block">
               <p className="text-dark font-display text-4xl font-bold">10+</p>
               <p className="text-dark text-xs font-sans uppercase tracking-widest font-bold mt-1">Years of<br/>Excellence</p>
             </div>
             <div className="absolute -top-5 -left-5 w-36 h-36 rounded-xl overflow-hidden shadow-royal border-2 border-primary/30 hidden md:block img-zoom">
-              <img src="/images/hotel_courtyard.jpg" alt="Hotel Courtyard" className="w-full h-full object-cover" />
+              <img src="/images/hotel_courtyard.webp" alt="Hotel Courtyard" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
@@ -177,7 +182,7 @@ export default function Home() {
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark/75 z-10" />
-          <img src="/images/hotel_facade_wide.jpg" alt="Hotel Panorama" className="w-full h-full object-cover" />
+          <img src="/images/hotel_facade_wide.webp" alt="Hotel Panorama" className="w-full h-full object-cover" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -213,12 +218,12 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
-              { src: '/images/hotel_facade_day.jpg', span: 'col-span-2 row-span-2', h: 'h-64 md:h-80' },
-              { src: '/images/room_interior_1.png', span: '', h: 'h-40' },
-              { src: '/images/hotel_exterior_terrace.jpg', span: '', h: 'h-40' },
-              { src: '/images/hotel_lobby_staircase.jpg', span: '', h: 'h-40' },
-              { src: '/images/restaurant_interior.png', span: '', h: 'h-40' },
-              { src: '/images/hotel_terrace_fountain.jpg', span: '', h: 'h-40' },
+              { src: '/images/hotel_facade_day.webp', span: 'col-span-2 row-span-2', h: 'h-64 md:h-80' },
+              { src: '/images/room_interior_1.webp', span: '', h: 'h-40' },
+              { src: '/images/hotel_exterior_terrace.webp', span: '', h: 'h-40' },
+              { src: '/images/hotel_lobby_staircase.webp', span: '', h: 'h-40' },
+              { src: '/images/restaurant_interior.webp', span: '', h: 'h-40' },
+              { src: '/images/hotel_terrace_fountain.webp', span: '', h: 'h-40' },
             ].map(({ src, span, h }, i) => (
               <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.07 }}
                 className={`img-zoom rounded-xl overflow-hidden border border-primary/10 ${span}`}

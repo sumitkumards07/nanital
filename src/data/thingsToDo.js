@@ -5,7 +5,7 @@ export const thingsToDo = [
     category: 'Adventure',
     duration: '1–2 hours',
     price: '₹80–₹300 per person',
-    image: '/images/hotel_exterior_terrace.jpg',
+    image: '/images/hotel_exterior_terrace.webp',
     description:
       'Glide across the serene waters of Naini Lake in a paddleboat or rowboat. The lake, shaped like a crescent moon, reflects the surrounding hills and Naina Devi Temple in its calm waters — a truly magical experience.',
     tips: [
@@ -23,7 +23,7 @@ export const thingsToDo = [
     category: 'Viewpoint',
     duration: '2–3 hours',
     price: '₹175 per person (ropeway)',
-    image: '/images/hotel_facade_day.jpg',
+    image: '/images/hotel_facade_day.webp',
     description:
       'Take the exhilarating aerial ropeway to Snow View Point at 7,500 feet and witness the spectacular snow-clad Himalayan range. On clear winter days, the panorama of peaks like Nanda Devi, Trishul, and Nanda Kot is absolutely awe-inspiring.',
     tips: [
@@ -41,7 +41,7 @@ export const thingsToDo = [
     category: 'Spiritual',
     duration: '1–2 hours',
     price: 'Free',
-    image: '/images/hotel_facade_wide.jpg',
+    image: '/images/hotel_facade_wide.webp',
     description:
       'Visit the ancient Naina Devi Temple, one of the 51 Shakti Peethas of India, perched on the northern shore of Naini Lake. The temple holds deep religious significance and the morning aarti is a moving spiritual experience.',
     tips: [
@@ -59,7 +59,7 @@ export const thingsToDo = [
     category: 'Shopping',
     duration: '2–4 hours',
     price: 'Varies',
-    image: '/images/hotel_lobby_staircase.jpg',
+    image: '/images/hotel_lobby_staircase.webp',
     description:
       'Stroll along the famous Mall Road and explore a vibrant array of shops selling local handicrafts, Nainital candles, woollen shawls, dried fruits, honey, and local artwork. End your walk at one of the many charming lakeside cafés.',
     tips: [
@@ -77,7 +77,7 @@ export const thingsToDo = [
     category: 'Trekking',
     duration: '3–4 hours',
     price: '₹100–₹200 (guide)',
-    image: '/images/hotel_courtyard.jpg',
+    image: '/images/hotel_courtyard.webp',
     description:
       'Embark on a refreshing trek to Tiffin Top (Dorothy\'s Seat) at 7,520 feet, named after a British artist who painted landscapes here. The trail passes through oak and rhododendron forests and culminates in a breathtaking panoramic view of Nainital and the Himalayan ranges.',
     tips: [
@@ -95,7 +95,7 @@ export const thingsToDo = [
     category: 'Nature',
     duration: '1–2 hours',
     price: '₹50 per person',
-    image: '/images/hotel_terrace_fountain.jpg',
+    image: '/images/hotel_terrace_fountain.webp',
     description:
       'Explore the fascinating network of interconnected natural caves named after Himalayan animals — Panther Cave, Flying Fox Cave, Bat Cave, Tiger Cave, and more. The caves are decorated with colorful lighting and there\'s a musical fountain show in the evenings.',
     tips: [
