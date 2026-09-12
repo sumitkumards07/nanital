@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function Disclaimer() {
   useEffect(() => { 
     document.title = 'Disclaimer | Alka The Lake View Hotel';
-    window.scrollTo(0,0) 
+    requestAnimationFrame(() => window.scrollTo(0,0)) 
   }, [])
 
   return (

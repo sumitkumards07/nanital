@@ -18,7 +18,7 @@ export default function RoomDetails() {
 
   useEffect(() => {
     if (room) document.title = `${room.name} | Alka The Lake View Hotel`
-    window.scrollTo(0,0); setActiveImg(0)
+    requestAnimationFrame(() => window.scrollTo(0,0)); setActiveImg(0)
   }, [slug, room])
 
   if (!room) return <Navigate to="/rooms" replace />

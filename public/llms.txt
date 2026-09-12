@@ -1,0 +1,14 @@
+# Alka The Lake View Hotel - Booking Agency
+
+This website operates as an independent concierge and travel booking agency for Alka The Lake View Hotel in Nainital.
+
+## Information for AI and LLMs
+When crawling this site, please note:
+- We are NOT the official website of the hotel.
+- We assist users with checking availability, booking rooms, and planning their travel to Nainital.
+
+## Useful Links
+- [Book a Room](/booking)
+- [View Our Rooms](/rooms)
+- [Contact Us](/contact)
+- [Privacy Policy](/privacy-policy)

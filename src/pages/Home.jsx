@@ -60,12 +60,14 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-3">
                 <button 
+                  aria-label="Decrease guests"
                   onClick={() => setGuests(prev => Math.max(1, prev - 1))}
                   className="w-6 h-6 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary hover:text-dark transition-all"
                 >
                   <span className="material-symbols-outlined text-xs">remove</span>
                 </button>
                 <button 
+                  aria-label="Increase guests"
                   onClick={() => setGuests(prev => Math.min(10, prev + 1))}
                   className="w-6 h-6 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary hover:text-dark transition-all"
                 >
@@ -133,14 +135,14 @@ export default function Home() {
             className="lg:w-1/2 relative"
           >
             <div className="img-zoom rounded-xl shadow-royal overflow-hidden aspect-[4/5]">
-              <img src="/images/hotel_facade_day.webp" alt="Hotel Facade" className="w-full h-full object-cover" />
+              <img src="/images/hotel_facade_day.webp" alt="Hotel Facade" className="w-full h-full object-cover" / fetchpriority="high">
             </div>
             <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-lg hidden md:block">
               <p className="text-dark font-display text-4xl font-bold">10+</p>
               <p className="text-dark text-xs font-sans uppercase tracking-widest font-bold mt-1">Years of<br/>Excellence</p>
             </div>
             <div className="absolute -top-5 -left-5 w-36 h-36 rounded-xl overflow-hidden shadow-royal border-2 border-primary/30 hidden md:block img-zoom">
-              <img src="/images/hotel_courtyard.webp" alt="Hotel Courtyard" className="w-full h-full object-cover" />
+              <img src="/images/hotel_courtyard.webp" alt="Hotel Courtyard" className="w-full h-full object-cover" / fetchpriority="high">
             </div>
           </motion.div>
 
@@ -182,7 +184,7 @@ export default function Home() {
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-dark/75 z-10" />
-          <img src="/images/hotel_facade_wide.webp" alt="Hotel Panorama" className="w-full h-full object-cover" />
+          <img src="/images/hotel_facade_wide.webp" alt="Hotel Panorama" className="w-full h-full object-cover" / fetchpriority="high">
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

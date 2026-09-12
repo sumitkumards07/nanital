@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function PrivacyPolicy() {
   useEffect(() => { 
-    window.scrollTo(0,0) 
+    requestAnimationFrame(() => window.scrollTo(0,0)) 
   }, [])
 
   return (
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
     </Helmet>
       <div className="page-hero py-20 bg-dark/50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="/images/hotel_lobby_staircase.webp" alt="bg" className="w-full h-full object-cover" />
+          <img src="/images/hotel_lobby_staircase.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high">
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="font-display text-4xl md:text-5xl text-slate-100 font-bold">Privacy Policy</h1>

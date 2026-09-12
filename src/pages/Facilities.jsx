@@ -5,11 +5,11 @@ import FacilityCard from '../components/FacilityCard'
 import { facilities } from '../data/facilities'
 
 export default function Facilities() {
-  useEffect(() => { document.title = 'Facilities | Alka The Lake View Hotel'; window.scrollTo(0,0) }, [])
+  useEffect(() => { document.title = 'Facilities | Alka The Lake View Hotel'; requestAnimationFrame(() => window.scrollTo(0,0)) }, [])
   return (
     <div className="pt-20">
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_courtyard.webp" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-20"><img src="/images/hotel_courtyard.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high"></div>
         <div className="absolute inset-0 bg-dark/70" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Hotel Services</motion.p>
@@ -35,7 +35,7 @@ export default function Facilities() {
             className="bg-dark/40 border border-primary/10 rounded-xl overflow-hidden shadow-royal">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="h-64 md:h-auto img-zoom overflow-hidden">
-                <img src="/images/restaurant_interior.webp" alt="Restaurant" className="w-full h-full object-cover" />
+                <img src="/images/restaurant_interior.webp" alt="Restaurant" className="w-full h-full object-cover" / fetchpriority="high">
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <span className="text-primary font-sans text-sm font-medium tracking-[0.2em] uppercase mb-4 block">Dining Experience</span>

@@ -6,7 +6,7 @@ import AttractionCard from '../components/AttractionCard'
 import { attractions } from '../data/attractions'
 
 export default function Attractions() {
-  useEffect(() => { window.scrollTo(0,0) }, [])
+  useEffect(() => { requestAnimationFrame(() => window.scrollTo(0,0)) }, [])
   return (
     <div className="pt-20">
     <Helmet>
@@ -14,7 +14,7 @@ export default function Attractions() {
       <meta name="description" content="Discover top attractions near Alka Hotel, including Naini Lake, Snow View Point, and Naina Devi Temple. Plan your Nainital itinerary." />
     </Helmet>
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-30"><img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-30"><img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high"></div>
         <div className="absolute inset-0 bg-dark/65" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Discover Nainital</motion.p>

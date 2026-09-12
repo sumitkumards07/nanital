@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { thingsToDo } from '../data/thingsToDo'
 
 export default function ThingsToDo() {
-  useEffect(() => { window.scrollTo(0,0) }, [])
+  useEffect(() => { requestAnimationFrame(() => window.scrollTo(0,0)) }, [])
   return (
     <div className="pt-20">
     <Helmet>
@@ -13,7 +13,7 @@ export default function ThingsToDo() {
       <meta name="description" content="Explore the best activities, boating, and sightseeing spots near Alka The Lake View Hotel on Nainital Mall Road." />
     </Helmet>
       <div className="page-hero">
-        <div className="absolute inset-0 opacity-30"><img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" /></div>
+        <div className="absolute inset-0 opacity-30"><img src="/images/hotel_facade_wide.webp" alt="bg" className="w-full h-full object-cover" / fetchpriority="high"></div>
         <div className="absolute inset-0 bg-dark/65" />
         <div className="relative z-10 text-center px-4">
           <motion.p initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} className="text-primary font-sans text-sm uppercase tracking-[0.2em] mb-3">Explore Nainital</motion.p>
