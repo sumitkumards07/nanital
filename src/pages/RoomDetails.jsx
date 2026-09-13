@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { rooms } from '../data/rooms'
-import BookingForm from '../components/BookingForm'
+
 
 const iconMap = {
   Wifi:'wifi', Wind:'air', Tv:'tv', Droplets:'water_drop', Bed:'bed',
@@ -14,7 +14,6 @@ export default function RoomDetails() {
   const { slug } = useParams()
   const room = rooms.find(r => r.slug === slug)
   const [activeImg, setActiveImg] = useState(0)
-  const [showForm, setShowForm] = useState(false)
 
   useEffect(() => {
     if (room) document.title = `${room.name} | Alka The Lake View Hotel`
@@ -111,15 +110,10 @@ export default function RoomDetails() {
 
               {/* CTAs */}
               <div className="flex gap-3 mb-8">
-                <button onClick={() => setShowForm(!showForm)}
+                <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
                   className="flex-1 bg-primary text-dark font-sans font-bold py-3.5 rounded-lg uppercase tracking-wide text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-sm">chat</span>
-                  Book This Room
-                </button>
-                <a href="tel:+919625081694"
-                  className="flex-1 border border-primary text-primary font-sans font-bold py-3.5 rounded-lg uppercase tracking-wide text-sm hover:bg-primary hover:text-dark transition-all flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-sm">call</span>
-                  Call to Book
+                  Book via WhatsApp
                 </a>
               </div>
 
@@ -136,17 +130,7 @@ export default function RoomDetails() {
             </motion.div>
           </div>
 
-          {/* Inline booking form */}
-          <AnimatePresence>
-            {showForm && (
-              <motion.div initial={{opacity:0,height:0}} animate={{opacity:1,height:'auto'}} exit={{opacity:0,height:0}} className="mt-12 overflow-hidden">
-                <div className="bg-dark/40 border border-primary/20 rounded-xl p-8">
-                  <h3 className="font-display text-2xl text-slate-100 mb-6">Complete Your Booking</h3>
-                  <BookingForm defaultRoom={room.category} />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+
 
           {/* Other rooms */}
           <div className="mt-20">

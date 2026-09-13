@@ -142,9 +142,9 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-display text-3xl text-dark font-bold mb-4">Come, Experience Nainital with Us</h2>
           <p className="font-sans text-dark/70 mb-8">We'd love to be your home in the mountains. Book your stay and become part of our story.</p>
-          <Link to="/booking" className="inline-block bg-dark text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-dark/80 transition-all text-sm">
+          <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="inline-block bg-dark text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-dark/80 transition-all text-sm">
             Book Your Stay
-          </Link>
+          </a>
         </div>
       </section>
     </div>

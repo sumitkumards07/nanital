@@ -117,19 +117,19 @@ export default function Navbar() {
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:+919625081694"
+            href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 text-slate-400 hover:text-primary text-sm font-sans transition-colors"
           >
-            <span className="material-symbols-outlined text-primary text-sm">call</span>
-            <span className="hidden lg:block">+91 9625081694</span>
+            <span className="material-symbols-outlined text-primary text-sm">chat</span>
+            <span className="hidden lg:block">WhatsApp Us</span>
           </a>
 
-          <Link
-            to="/booking"
+          <a
+            href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
             className="hidden md:inline-block bg-primary text-dark px-6 py-2.5 rounded-lg font-sans font-bold text-sm tracking-wide hover:brightness-110 transition-all uppercase"
           >
             Book Now
-          </Link>
+          </a>
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -180,18 +180,18 @@ export default function Navbar() {
               ))}
               <div className="pt-4 border-t border-primary/10 space-y-3">
                 <a
-                  href="tel:+919625081694"
+                  href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 text-slate-400 px-3 py-2 text-sm font-sans"
                 >
-                  <span className="material-symbols-outlined text-primary text-sm">call</span>
-                  +91 9625081694
+                  <span className="material-symbols-outlined text-primary text-sm">chat</span>
+                  WhatsApp Us
                 </a>
-                <Link
-                  to="/booking"
+                <a
+                  href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
                   className="block w-full bg-primary text-dark text-center py-3 rounded-lg font-sans font-bold text-sm uppercase tracking-wide"
                 >
                   Book Now
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>

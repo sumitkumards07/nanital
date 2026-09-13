@@ -103,12 +103,12 @@ export default function Hero() {
           transition={{ delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Link
-            to="/booking"
+          <a
+            href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
             className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:scale-105 transition-transform"
           >
             Book Your Stay
-          </Link>
+          </a>
           <Link
             to="/rooms"
             className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-sans font-bold hover:bg-white/20 transition-all"

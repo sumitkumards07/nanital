@@ -90,12 +90,14 @@ export default function RoomCard({ room, index = 0 }) {
           >
             Details
           </Link>
-          <Link
-            to={`/booking?room=${room.category}`}
-            className="flex-1 bg-primary text-dark text-sm font-sans font-bold py-2.5 rounded-lg text-center hover:brightness-110 transition-all"
+          <a
+            href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 flex-1 border border-primary text-primary py-2.5 rounded-lg font-sans font-bold text-[11px] uppercase tracking-wider hover:bg-primary hover:text-dark transition-colors"
           >
-            Book Now
-          </Link>
+            <span className="material-symbols-outlined text-sm">chat</span> Book Now
+          </a>
         </div>
       </div>
     </motion.div>
