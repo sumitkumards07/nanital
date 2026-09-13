@@ -8,7 +8,7 @@ const quickLinks = [
   { label: 'Facilities',         to: '/facilities' },
   { label: 'Things To Do',       to: '/things-to-do' },
   { label: 'Nearby Attractions', to: '/attractions' },
-  { label: 'Book Now',           to: 'https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.' },
+  { label: 'Book Now',           to: 'https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.' },
 ]
 
 const infoLinks = [
@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="text-dark/70 font-sans text-sm mt-1">Book your stay and enjoy the beauty of the Himalayas.</p>
           </div>
           <a
-            href="https://wa.me/919625081694"
+            href="https://wa.me/917351042519"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-dark text-primary px-6 py-3 rounded-lg font-sans font-bold text-sm hover:bg-dark/80 transition-colors whitespace-nowrap uppercase tracking-wide"
@@ -72,8 +72,8 @@ export default function Footer() {
           <div className="flex gap-3">
             {[
               { icon: 'camera_alt',   href: 'https://instagram.com',   label: 'Instagram' },
-              { icon: 'chat',         href: 'https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.',             label: 'WhatsApp' },
-              { icon: 'chat',         href: 'https://wa.me/919625081694',    label: 'WhatsApp' },
+              { icon: 'chat',         href: 'https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.',             label: 'WhatsApp' },
+              { icon: 'chat',         href: 'https://wa.me/917351042519',    label: 'WhatsApp' },
               { icon: 'mail',         href: 'mailto:support@alkahotel-partner.online', label: 'Email' },
             ].map((s) => (
               <a
@@ -141,7 +141,7 @@ export default function Footer() {
           <h4 className="font-display font-bold text-slate-100 mb-6">Contact Us</h4>
           <div className="space-y-4">
             {[
-              { icon: 'chat',        label: 'WhatsApp',   value: 'WhatsApp Us',             href: 'https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.' },
+              { icon: 'chat',        label: 'WhatsApp',   value: 'WhatsApp Us',             href: 'https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.' },
               { icon: 'mail',        label: 'Email',   value: 'support@alkahotel-partner.online', href: 'mailto:support@alkahotel-partner.online' },
               { icon: 'location_on', label: 'Agency Address', value: 'First Floor, Sharma Complex,\nThe Mall, Nainital, UK 263001', href: null },
             ].map((c) => (

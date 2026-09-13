@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 export default function ContactButtons() {
-  const phone = '9625081694'
+  const phone = '7351042519'
 
   return (
     <>

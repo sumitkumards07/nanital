@@ -104,7 +104,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
+            href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
             className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:scale-105 transition-transform"
           >
             Book Your Stay

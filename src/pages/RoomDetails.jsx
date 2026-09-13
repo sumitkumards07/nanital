@@ -110,7 +110,7 @@ export default function RoomDetails() {
 
               {/* CTAs */}
               <div className="flex gap-3 mb-8">
-                <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer"
                   className="flex-1 bg-primary text-dark font-sans font-bold py-3.5 rounded-lg uppercase tracking-wide text-sm hover:brightness-110 transition-all flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-sm">chat</span>
                   Book via WhatsApp

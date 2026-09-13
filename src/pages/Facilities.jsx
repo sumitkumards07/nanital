@@ -42,7 +42,7 @@ export default function Facilities() {
                 <h3 className="font-display text-3xl text-slate-100 font-bold mb-4">Dining at Woods & Alka Bistro</h3>
                 <p className="font-sans text-slate-400 text-sm leading-relaxed mb-4">Savor a world of flavors at "Woods," our multi-cuisine restaurant, or grab a delicious quick bite at "Alka Bistro." From traditional Kumaoni delicacies like Bhatt ki Churkani to contemporary favorites, we offer the best dining experience near Naini Lake.</p>
                 <p className="font-sans text-slate-500 text-xs mb-6">Open 7 AM – 10 PM daily · Breakfast included with stay</p>
-                <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="self-start flex items-center gap-2 bg-primary text-dark px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
+                <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="self-start flex items-center gap-2 bg-primary text-dark px-6 py-3 rounded-lg font-sans font-bold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
                   <span className="material-symbols-outlined text-sm">restaurant</span> Reserve a Table
                 </a>
               </div>
@@ -52,7 +52,7 @@ export default function Facilities() {
           <div className="text-center mt-16">
             <h3 className="font-display text-2xl text-slate-100 mb-3">Experience These Facilities First-Hand</h3>
             <p className="font-sans text-slate-400 text-sm mb-6">Book your stay and enjoy everything we offer.</p>
-            <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-dark px-8 py-3 rounded-lg font-sans font-bold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
+            <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-dark px-8 py-3 rounded-lg font-sans font-bold text-sm uppercase tracking-wide hover:brightness-110 transition-all">
               <span className="material-symbols-outlined text-sm">arrow_forward</span> Book Now
             </a>
           </div>

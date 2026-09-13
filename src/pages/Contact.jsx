@@ -11,17 +11,17 @@ export default function Contact() {
   const submit = e => {
     e.preventDefault()
     const msg = `Hello, I'm ${form.name}.\nEmail: ${form.email}\nPhone: ${form.phone}\nSubject: ${form.subject}\nMessage: ${form.message}`
-    window.open(`https://wa.me/919625081694?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/917351042519?text=${encodeURIComponent(msg)}`, '_blank')
     setSent(true)
   }
 
   const inputCls = 'w-full rounded-lg px-4 py-3 text-sm font-sans bg-dark/50 text-slate-100 placeholder:text-slate-600 border border-primary/20 hover:border-primary/40 focus:outline-none focus:ring-1 focus:ring-primary transition-all'
 
   const contactCards = [
-    {icon:'call',        title:'Phone',    val:'+91 9625081694',               href:'tel:+919625081694',   sub:'Tap to call'},
+    {icon:'call',        title:'Phone',    val:'+91 7351042519',               href:'tel:+917351042519',   sub:'Tap to call'},
     {icon:'mail',        title:'Email',    val:'support@alkahotel-partner.online',   href:'mailto:support@alkahotel-partner.online', sub:'Send email'},
     {icon:'location_on', title:'Agency Address',  val:'First Floor, Sharma Complex\nThe Mall, Nainital, UK 263001', href:null, sub:null},
-    {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/919625081694', sub:'Open WhatsApp'},
+    {icon:'chat',        title:'WhatsApp', val:'Chat instantly with our team', href:'https://wa.me/917351042519', sub:'Open WhatsApp'},
   ]
 
   return (
@@ -127,7 +127,7 @@ export default function Contact() {
               <div className="bg-dark/40 border border-primary/10 rounded-xl p-6">
                 <h3 className="font-display text-xl text-slate-100 font-bold mb-4">Connect with Us</h3>
                 <div className="grid grid-cols-3 gap-3">
-                  {[{icon:'call',label:'Call',href:'tel:+919625081694',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/919625081694',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:support@alkahotel-partner.online',bg:'bg-red-600'}].map(s => (
+                  {[{icon:'call',label:'Call',href:'tel:+917351042519',bg:'bg-blue-600'},{icon:'chat',label:'WhatsApp',href:'https://wa.me/917351042519',bg:'bg-green-600'},{icon:'camera_alt',label:'Instagram',href:'https://instagram.com',bg:'bg-pink-600'},{icon:'share',label:'Facebook',href:'https://facebook.com',bg:'bg-blue-800'},{icon:'mail',label:'Email',href:'mailto:support@alkahotel-partner.online',bg:'bg-red-600'}].map(s => (
                     <a key={s.label} href={s.href} target={s.href.startsWith('http')?'_blank':undefined} rel="noopener noreferrer"
                       className={`${s.bg} text-white rounded-xl p-3 flex flex-col items-center gap-1 hover:opacity-90 transition-opacity`}>
                       <span className="material-symbols-outlined text-xl">{s.icon}</span>

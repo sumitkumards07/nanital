@@ -88,7 +88,7 @@ export default function Policies() {
             <p className="font-sans text-slate-500 text-xs">Last updated: January 2025. Policies subject to change — please verify before your visit.</p>
             <p className="font-sans text-slate-500 text-xs mt-1">
               Queries: <a href="mailto:support@alkahotel-partner.online" className="text-primary hover:underline">support@alkahotel-partner.online</a> ·{' '}
-              <a href="tel:+919625081694" className="text-primary hover:underline">+91 9625081694</a>
+              <a href="tel:+917351042519" className="text-primary hover:underline">+91 7351042519</a>
             </p>
           </motion.div>
         </div>

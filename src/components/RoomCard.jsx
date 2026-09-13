@@ -91,7 +91,7 @@ export default function RoomCard({ room, index = 0 }) {
             Details
           </Link>
           <a
-            href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room."
+            href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-1.5 flex-1 border border-primary text-primary py-2.5 rounded-lg font-sans font-bold text-[11px] uppercase tracking-wider hover:bg-primary hover:text-dark transition-colors"

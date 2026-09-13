@@ -76,7 +76,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="bg-primary text-dark font-sans font-bold rounded-lg py-4 text-center uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center">
+          <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="bg-primary text-dark font-sans font-bold rounded-lg py-4 text-center uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center">
             Book Now
           </a>
         </div>
@@ -198,7 +198,7 @@ export default function Home() {
             Wake to mist-draped peaks, breathe crisp mountain air, and fall asleep to the stillness of the hills.
             Alka The Lake View Hotel is not just a stay — it's a transformation.
           </p>
-          <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-dark px-10 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:scale-105 transition-transform text-sm">
+          <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-dark px-10 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:scale-105 transition-transform text-sm">
             Book Your Stay
           </a>
         </motion.div>
@@ -266,10 +266,10 @@ export default function Home() {
             <h2 className="font-display text-4xl font-bold text-slate-100 mb-4">Ready for Your Mountain Escape?</h2>
             <p className="font-sans text-slate-400 text-base mb-8">Book your stay at Alka The Lake View Hotel. Experience royalty in the heart of Nainital.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
+              <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
                 <span className="material-symbols-outlined text-sm">calendar_month</span> Book Now
               </a>
-              <a href="https://wa.me/919625081694?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
+              <a href="https://wa.me/917351042519?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room." target="_blank" rel="noopener noreferrer" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
               </a>
             </div>
