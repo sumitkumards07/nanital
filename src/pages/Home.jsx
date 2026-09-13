@@ -269,8 +269,8 @@ export default function Home() {
               <Link to="/booking" className="bg-primary text-dark px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:brightness-110 transition-all text-sm flex items-center justify-center gap-2 shadow-neon">
                 <span className="material-symbols-outlined text-sm">calendar_month</span> Book Now
               </Link>
-              <a href="tel:+917082676889" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
-                <span className="material-symbols-outlined text-sm">call</span> Call +91 7082676889
+              <a href="tel:+919625081694" className="border border-primary text-primary px-8 py-4 rounded-lg font-sans font-bold uppercase tracking-wide hover:bg-primary hover:text-dark transition-all text-sm flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined text-sm">call</span> Call +91 9625081694
               </a>
             </div>
             <p className="font-sans text-slate-500 text-xs mt-4">Instant WhatsApp confirmation · Check-in 12 PM · Free cancellation*</p>
